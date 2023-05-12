@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2? family= Amatic+SC:wght@700 & family= El tipo más afortunado & family= Marcador+permanente & family= Shadows+Into+Light & mostrar=cambiar');
+
+//font-family: 'Amatic SC', cursive;
+//font-family: 'Luckiest Guy', cursive;
+//font-family: 'Permanent Marker', cursive;
+//font-family: 'Shadows Into Light', cursive;
+
 $color-1: #B6D456;
 $color-2: #E4FF8E;
 $color-3: #E4FA9D;
 $color-4: #37401b;
+$text-titulos: 'Luckiest Guy', cursive;
 
 *{
     margin: 0;
@@ -27,6 +35,7 @@ $color-4: #37401b;
 
         .sec-s1{
             letter-spacing: 1.5px;
+            font-family: 'Luckiest Guy', cursive;;
             font-size: 2rem;
             color: $color-4;
         }
