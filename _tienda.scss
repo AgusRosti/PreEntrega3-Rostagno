@@ -1,13 +1,4 @@
-$color-1: #B6D456;
-$color-2: #E4FF8E;
-$color-3: #E4FA9D;
-$color-4: #37401b;
-$text-titulos: 'Luckiest Guy', cursive;
-$text-2: 'Permanent Marker', cursive;
-$text-3: 'Neucha', cursive;
-$text-4: 'Amatic SC', cursive;
-
-main{
+.main-p{
     background: rgb(228,250,157);
     background: linear-gradient(185deg, rgba(228,250,157,1) 17%, rgba(182,212,86,1) 40%, rgba(55,64,27,1) 100%);
     padding-bottom: 30px;
@@ -16,7 +7,7 @@ main{
         text-align: center;
         padding: 15px;
 
-        .send-content{
+        .send-content {
             @include flex (flex, column, center, center);
 
             .send-cuestion{
@@ -36,7 +27,7 @@ main{
                     li{
                         text-align: start;
                         @extend %cursiva;
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         line-height: 40px;
 
                         a{

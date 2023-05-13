@@ -1,0 +1,116 @@
+.main-p{
+    background: rgb(228,250,157);
+    background: linear-gradient(185deg, rgba(228,250,157,1) 17%, rgba(182,212,86,1) 40%, rgba(55,64,27,1) 100%);
+    padding:30px 15px;
+
+    section{
+
+        .sec1-nosotros{
+            @include flex(flex, column, center,center);
+            text-align: center;
+
+            .t2{
+                @extend %titulos;
+                color: $color-1;
+                font-size: 2.2rem;
+            }
+
+            img{
+                border: 2px solid $color-4;
+            }
+
+            p{
+                @extend %parrafos;
+                line-height: 25px;
+                padding-top: 15px;
+            }
+
+            .img-2{
+                width: 300px;
+                height: 300px;
+            }
+
+            .p3{
+                color: $color-2;
+            }
+
+            .t3{
+                @extend %subtitulos;
+                margin-block: 10px;
+                color: wheat;
+            }
+        }
+    }
+
+    .menoscarne{
+        padding: 40px 10px 15px;
+        text-align: center;
+
+        h3{
+            @extend %titulos;
+        }
+
+        .menosc-flex{
+            display: flex;
+            justify-content: space-evenly;
+    
+            .img-thumbnail{
+                width: 150px;
+                height: 200px;
+            }
+        }
+
+        h4{
+            @extend %subtitulos;
+            color: wheat;
+            font-size: 1.4rem;
+            line-height: 20px;
+        }
+    }
+
+    .razones{
+        margin-inline: 25px;
+        @extend %parrafos;
+        line-height: 20px;
+        color: $color-2;
+        text-align: center;
+
+        h5{
+            padding-block: 3px;
+        }
+
+        a{
+            @extend %botones;
+            ;
+        }
+    }
+
+    .sec2-n{
+        padding-top: 50px;
+
+        .flex-n{
+            @include flex(flex,column,center,center);
+            text-align: center;
+
+            .n-tit{
+                @extend %titulos;
+                font-size: 1.8rem;
+            }
+
+            .n-p{
+                @extend %parrafos;
+                color: wheat;
+            }
+
+            .n-b{
+                @extend %botones;
+                color: $color-4;
+                background-color: $color-3;
+                padding: 2px 15px;
+                transform: 1seg;
+                cursor: pointer;
+                box-shadow: rgba(67, 252, 50, 0.17) 0px -23px 25px 0px inset, rgba(107, 107, 107, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+    }
+}
+}
