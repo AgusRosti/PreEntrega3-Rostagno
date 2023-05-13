@@ -15,6 +15,42 @@ $text-2: 'Permanent Marker', cursive;
 $text-3: 'Shadows Into Light', cursive;
 $text-4: 'Amatic SC', cursive;
 
+%titulos{
+    text-align: center;
+    padding-bottom: 10px;
+    color: $color-3;
+    font-family: $text-titulos;
+    text-shadow: 1px 2px 4px $color-4;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+
+%parrafos{
+    line-height: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    color: $color-4;
+}
+
+%cursiva{
+    line-height: 15px;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: $color-4;
+}
+
+%botones{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: $text-4;
+    font-size: 1.5rem;
+    color: $color-3;
+    background-color: $color-4;
+    border: none;
+    border-radius: 40px;
+    padding: 2px 15px;
+}
+
 
 *{
     margin: 0;
@@ -98,19 +134,13 @@ $text-4: 'Amatic SC', cursive;
         .cont2-p{
             grid-column: 1/3;
             grid-row: 3/4;
-            line-height: 20px;
-            font-size: 1.3rem;
-            letter-spacing: 1.5px;
-            color: $color-4;
+            @extend %parrafos
         }
 
         .cont2-p2{
             grid-column: 1/3;
             grid-row: 4/5;
-            line-height: 15px;
-            font-size: 1.4rem;
-            font-style: italic;
-            color: $color-4;
+            @extend %cursiva
         }
     }
 }
@@ -129,13 +159,7 @@ $text-4: 'Amatic SC', cursive;
         justify-content: stretch;
 
         .cont3-t{
-        text-align: center;
-        padding-bottom: 10px;
-        color: $color-3;
-        font-family: $text-titulos;
-        text-shadow: 1px 2px 4px $color-4;
-        letter-spacing: 3px;
-        font-size: 1.5rem;
+        @extend %titulos
         }
     
         .cont3-img{
@@ -150,15 +174,7 @@ $text-4: 'Amatic SC', cursive;
         }
 
         .sec3-p{
-            text-decoration: none;
-            letter-spacing: 1.8px;
-            font-family: $text-4;
-            font-size: 1.5rem;
-            color: $color-3;
-            background-color: $color-4;
-            border: none;
-            border-radius: 40px;
-            padding: 5px 25px;
+            @extend %botones
         }
     }
 
@@ -171,18 +187,13 @@ $text-4: 'Amatic SC', cursive;
         text-align: center;
 
         h4{
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-            padding-inline: 10px;
-            line-height: 25px;
-            color: $color-4;
+            @extend %parrafos
         }
 
         h5{
-            font-size: 1rem;
-            letter-spacing: 1px;
-            padding-inline: 15px;
-            line-height: 15px;
+            @extend %cursiva;
+            font-size: 1.2rem;
+            padding-inline: 5px;
         }
 
         .text1{
@@ -266,24 +277,16 @@ $text-4: 'Amatic SC', cursive;
         }
 
         h4{
-            font-size: 1.3rem;
-            line-height: 20px;
+            @extend %parrafos;
+            padding: 5px;
         }
 
         .h4-2{
-            padding-bottom: 10px;
+            @extend %cursiva;
         }
 
         .boton{
-            text-decoration: none;
-            letter-spacing: 1px;
-            font-family: $text-4;
-            font-size: 1.5rem;
-            color: $color-3;
-            background-color: $color-4;
-            border: none;
-            border-radius: 40px;
-            padding: 2px 15px;
+            @extend %botones;
         }
     }
 
@@ -301,10 +304,8 @@ $text-4: 'Amatic SC', cursive;
                 padding: 5px 10px;
 
                 .sec4-t{
-                    text-shadow: 4px 5px 10px $color-4;
-                    font-family: $text-titulos;
-                    font-size: 2rem;
-                    letter-spacing: .2rem;
+                    @extend %titulos;
+                    font-size: 2.3rem;
                 }
 
                 .sec4-p{
@@ -322,25 +323,14 @@ $text-4: 'Amatic SC', cursive;
                     box-shadow: 5px 5px 10px $color-4;
 
                     .sec4-pp{
-                        font-size: 1.2rem;
-                        line-height: 25px;
-                        color: $color-4;
-                        padding-bottom: 10px;
+                        @extend %parrafos
                     }
 
                     .sec4-b{
-                        text-decoration: none;
-                        letter-spacing: 1.5px;
-                        font-family: $text-4;
-                        font-size: 1.5rem;
-                        color: $color-3;
-                        background-color: $color-4;
-                        border: none;
-                        border-radius: 40px;
-                        padding: 5px 25px;}
+                        @extend %botones
+                    }
                 }
             }
         }
-
 
 }
