@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
-.sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
+.footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
   text-align: center;
   padding-bottom: 10px;
   color: #E4FA9D;
@@ -162,7 +162,7 @@
 .sec3 .sec-productos .stext1 {
   grid-column: 1/2;
   grid-row: 2/3;
-  align-self: flex-center;
+  align-self: center;
 }
 .sec3 .sec-productos .img1 {
   grid-column: 1/2;
@@ -250,4 +250,20 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 5px 5px 10px #37401b;
+}
+.footer {
+  background-color: #37401b;
+  text-align: center;
+}
+.footer .foot-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 15px;
+  padding: 10px;
+}
+.footer .foot-text img {
+  height: 80px;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=estilos.css.map */

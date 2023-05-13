@@ -19,6 +19,15 @@ $text-4: 'Amatic SC', cursive;
     font-size: 1.5rem;
 }
 
+%subtitulos{
+    font-family: $text-4;
+    font-size: 2rem;
+    color: $color-2;
+    text-shadow: 5px 3px 4px $color-4;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
 %parrafos{
     line-height: 20px;
     font-size: 1.3rem;
@@ -182,7 +191,7 @@ $text-4: 'Amatic SC', cursive;
         text-align: center;
 
         h4{
-            @extend %parrafos
+            @extend %parrafos;
         }
 
         h5{
@@ -200,7 +209,7 @@ $text-4: 'Amatic SC', cursive;
         .stext1{
             grid-column: 1/2;
             grid-row: 2/3;
-            align-self: flex-center;
+            align-self: center;
         }
 
         .img1{
@@ -257,7 +266,6 @@ $text-4: 'Amatic SC', cursive;
     background: rgb(228,250,157);
     background: linear-gradient(185deg, rgba(228,250,157,1) 17%, rgba(182,212,86,1) 40%, rgba(55,64,27,1) 100%);
 
-
     .sec4-tit{
         color: $color-4;
         text-align: center;
@@ -304,12 +312,7 @@ $text-4: 'Amatic SC', cursive;
                 }
 
                 .sec4-p{
-                    font-family: $text-4;
-                    font-size: 2rem;
-                    color: $color-2;
-                    text-shadow: 5px 3px 4px $color-4;
-                    letter-spacing: 2px;
-                    line-height: 30px;
+                    @extend %subtitulo
                 }
                 
 
@@ -320,17 +323,39 @@ $text-4: 'Amatic SC', cursive;
                     box-shadow: 5px 5px 10px $color-4;
 
                     .sec4-pp{
-                        @extend %parrafos
+                        @extend %parrafos;
                     }
 
                     .sec4-b{
-                        @extend %botones
+                        @extend %botones;
                     }
                 }
             }
         }
+}
+
+.footer{
+    background-color: $color-4;
+    text-align: center;
+
+    .foot-text{
+        @include flex (flex, column, center, center);
+        line-height: 15px;
+        padding: 10px;
+        font-size: 1.5rem;
+
+        .foot-1{
+            @extend %titulos;
+        }
+
+        img{
+            height: 80px;
+            padding-bottom: 20px;
+        }
+    }
+    
+}
 
 
-};
 
 @import "_medias.scss"
