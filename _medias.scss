@@ -1,6 +1,16 @@
-@media only screen and (min-width: 500px){
+$breakpoints: (
+    celu: 480px,
+    tablet: 800px,
+    pc: 1024px
+);
+
+@mixin responsive($font-size, $imagenes, $botones: $breakpoints) {
+
+    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+    }
     
-    .sec-s1{
-        font-size: 3rem;
+    @media screen and (min-width: #{$mq-breakpoint}) {
+    @content;
     }
 }
