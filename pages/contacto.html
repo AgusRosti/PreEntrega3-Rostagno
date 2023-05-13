@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Milanesamor contactanos">
+    <meta name="keywords" content="comprar medallones soja veganos verguras vegetarianos">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<link rel="stylesheet" href="../estilos.css" />
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <title>Tienda</title>
+    <title>Milanesamor Contacto</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="./img/MilanesAmor.png" width="100" height="35" alt="Logo MilanesAmor">
+                <img src="../img/MilanesAmor.png" width="100" height="35" alt="Logo MilanesAmor">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -24,25 +26,62 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                    <a class="nav-link" href="./tienda.html">Tienda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Recetas</a>
+                    <a class="nav-link" href="./recetas.html">Recetas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link active" href="#">Contacto</a>
                 </li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <main class="main-p">
+        <section>
+            <article class="formularios">
+                <i class="bi bi-chat-square-heart-fill"></i>
+                <h2>Nos encanta escuchar sus aportes</h2>
+                <p>Si necesitas contactarnos para hacernos alguna pregunta o simplemente para dejar tu comentario, sentite libre de hacerlo en este espacio. ¡Responderemos!</p>
+                <nav>
+                    <a href="https://api.whatsapp.com/send/?phone=543471622752&text&type=phone_number&app_absent=0">Para consultas comunicate con nosotros a nuestro Whatsapp</a>
+                </nav>
+            </article>
+
+            <article class="formularios content-form">
+                <form class="form-c">
+                    <div>
+                        <p>dejanos tus datos:</p>
+                    </div>
+                    <div>
+                        <input class="fomr-i" type="text" placeholder="¿Cómo te llamas?" required>
+                    </div>
+                    <div>
+                        <input class="fomr-i" type="email" placeholder="¿Cuál es tu correo?" required>
+                    </div>
+                    <div>
+                        <input class="fomr-i" type="tel" placeholder="Ingresa tu celular">
+                    </div>
+                    <div>
+                        <textarea cols="auto" rows="8">Dejanos aca tus dudas o comentarios.</textarea>
+                    </div>
+                    <div>
+                        <input class="fomr-i" type="submit" value="Enviar" class="send">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
     <footer>
         <section class="footer">
             <article class="foot-text">

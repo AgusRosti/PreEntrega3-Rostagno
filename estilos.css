@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
-.main-p .sec-r .card-recetas .card .card-title, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
+.formularios h3, .main-p .sec-r .card-recetas .card .card-title, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
   text-align: center;
   padding-bottom: 10px;
   color: #E4FA9D;
@@ -18,7 +18,7 @@
   line-height: 30px;
 }
 
-.main-p .sec2-n .flex-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .sec4 .sec4-tit h4, .sec3 .sec-productos h4, .sec2 .sec-cont2 .cont2-p {
+.formularios p, .main-p .sec2-n .flex-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .sec4 .sec4-tit h4, .sec3 .sec-productos h4, .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
@@ -32,7 +32,7 @@
   color: #37401b;
 }
 
-.main-p .sec2-n .flex-n .n-b, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .sec4 .sec4-tit .boton, .sec3 .sec-cont3 .sec3-p {
+.formularios .form-c div input[type=submit], .main-p .sec2-n .flex-n .n-b, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .sec4 .sec4-tit .boton, .sec3 .sec-cont3 .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -521,4 +521,46 @@
 .main-p .sec-r .card-recetas .card .card-title {
   letter-spacing: 1.3px;
   font-size: 1.25rem;
+}
+
+.formularios {
+  text-align: center;
+}
+.formularios .bi {
+  font-size: 2.5rem;
+  color: rgb(230, 44, 44);
+}
+.formularios h3 {
+  color: rgb(22, 80, 22);
+  text-shadow: none;
+  font-size: 2rem;
+  line-height: 30px;
+}
+.formularios nav {
+  line-height: 15px;
+}
+.formularios nav a {
+  font-size: 1.2rem;
+  color: azure;
+}
+.formularios .form-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 30px;
+  margin: 20px 15px;
+  gap: 10px;
+  background-image: url(./img/fondo3.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+.formularios .form-c div .fomr-i,
+.formularios .form-c div textarea {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  font-family: "Neucha", cursive;
+  font-size: 1rem;
 }/*# sourceMappingURL=estilos.css.map */
