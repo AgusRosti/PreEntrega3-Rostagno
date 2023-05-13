@@ -1,0 +1,105 @@
+$color-1: #B6D456;
+$color-2: #E4FF8E;
+$color-3: #E4FA9D;
+$color-4: #37401b;
+$text-titulos: 'Luckiest Guy', cursive;
+$text-2: 'Permanent Marker', cursive;
+$text-3: 'Neucha', cursive;
+$text-4: 'Amatic SC', cursive;
+
+main{
+    background: rgb(228,250,157);
+    background: linear-gradient(185deg, rgba(228,250,157,1) 17%, rgba(182,212,86,1) 40%, rgba(55,64,27,1) 100%);
+    padding-bottom: 30px;
+
+    .sec1-send{
+        text-align: center;
+        padding: 15px;
+
+        .send-content{
+            @include flex (flex, column, center, center);
+
+            .send-cuestion{
+                @extend %titulos;
+                color: $color-1;
+                text-shadow: 0px 0px 2px black;
+            }
+
+            .send-parrafo{
+                @extend %parrafos;
+                font-size: 1.2rem ;
+            }
+
+            .nav-mapa{
+                ul{
+                    
+                    li{
+                        text-align: start;
+                        @extend %cursiva;
+                        font-size: 1.2rem;
+                        line-height: 40px;
+
+                        a{
+                            text-decoration: underline;
+                            color: $color-4;
+                            font-weight: bold;
+                            text-shadow: 1px 0px 1px $color-1;
+                        }
+                    }
+                };
+            }
+        }
+    }
+
+    .pedidos-card{
+        margin: 30px ;
+        
+        .card{
+            @include flex (flex, column, center, center);
+            background-image: url(./img/fondo5.png);
+            background-position: center;
+            padding: 10px;
+            margin: 15px;
+            border: 1px solid $color-2;
+
+            .card-img-top{
+                width: 200px;
+                height: 150px;
+                border: 3px solid $color-2;
+            }
+            
+            .card-body{
+                line-height: 5px;
+                color: $color-4;
+
+                .card-title{
+                    @extend %subtitulos;
+                    color: $color-4;
+                    letter-spacing: 1px;
+                    font-size: 2.2rem;
+                }
+
+                p{
+                    @extend %parrafos;
+                }
+
+                .btn{
+                    @extend %botones;
+                    padding: 2px 15px;
+                    letter-spacing: .5px;
+                }
+            }
+        }
+    }
+
+    .info-section{
+        text-align: center;
+        
+        p{
+            font-family: $text-4;
+            font-size: 1.7rem;
+            line-height: 25px;
+            padding: 0px 25px;
+        }
+    }
+}

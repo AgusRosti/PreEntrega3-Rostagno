@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
-.footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
+main .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
   text-align: center;
   padding-bottom: 10px;
   color: #E4FA9D;
@@ -9,21 +9,30 @@
   font-size: 1.5rem;
 }
 
-.sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .sec4 .sec4-tit h4, .sec3 .sec-productos h4, .sec2 .sec-cont2 .cont2-p {
+main .pedidos-card .card .card-body .card-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  color: #E4FF8E;
+  text-shadow: 5px 3px 4px #37401b;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+main .pedidos-card .card .card-body p, main .sec1-send .send-content .send-parrafo, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .sec4 .sec4-tit h4, .sec3 .sec-productos h4, .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
   color: #37401b;
 }
 
-.sec4 .sec4-tit .h4-2, .sec3 .sec-productos h5, .sec2 .sec-cont2 .cont2-p2 {
+main .sec1-send .send-content .nav-mapa ul li, .sec4 .sec4-tit .h4-2, .sec3 .sec-productos h5, .sec2 .sec-cont2 .cont2-p2 {
   line-height: 15px;
   font-size: 1.4rem;
   font-style: italic;
   color: #37401b;
 }
 
-.footer .foot-text .btn, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .sec4 .sec4-tit .boton, .sec3 .sec-cont3 .sec3-p {
+main .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .sec4 .sec4-tit .boton, .sec3 .sec-cont3 .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -47,7 +56,6 @@
 
 .navbar {
   background-color: #44521d;
-  padding: 5px 20px;
   font-size: 1.35rem;
   line-height: 20px;
   padding-block: 20px;
@@ -61,7 +69,7 @@
 }
 
 .sec1 {
-  height: 100vh;
+  height: auto;
   background-image: url(./img/fondo3.png);
   background-position: center;
   background-size: cover;
@@ -75,6 +83,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-block-size: 360px;
 }
 .sec1 .sec-cont1 .sec-s1 {
   letter-spacing: 1.8px;
@@ -325,4 +334,79 @@
 .footer .foot-text .iconos i {
   color: white;
   font-size: 1.5rem;
+}
+
+main {
+  background: rgb(228, 250, 157);
+  background: linear-gradient(185deg, rgb(228, 250, 157) 17%, rgb(182, 212, 86) 40%, rgb(55, 64, 27) 100%);
+  padding-bottom: 30px;
+}
+main .sec1-send {
+  text-align: center;
+  padding: 15px;
+}
+main .sec1-send .send-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .sec1-send .send-content .send-cuestion {
+  color: #B6D456;
+  text-shadow: 0px 0px 2px black;
+}
+main .sec1-send .send-content .send-parrafo {
+  font-size: 1.2rem;
+}
+main .sec1-send .send-content .nav-mapa ul li {
+  text-align: start;
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+main .sec1-send .send-content .nav-mapa ul li a {
+  text-decoration: underline;
+  color: #37401b;
+  font-weight: bold;
+  text-shadow: 1px 0px 1px #B6D456;
+}
+main .pedidos-card {
+  margin: 30px;
+}
+main .pedidos-card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/fondo5.png);
+  background-position: center;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid #E4FF8E;
+}
+main .pedidos-card .card .card-img-top {
+  width: 200px;
+  height: 150px;
+  border: 3px solid #E4FF8E;
+}
+main .pedidos-card .card .card-body {
+  line-height: 5px;
+  color: #37401b;
+}
+main .pedidos-card .card .card-body .card-title {
+  color: #37401b;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+main .pedidos-card .card .card-body .btn {
+  padding: 2px 15px;
+  letter-spacing: 0.5px;
+}
+main .info-section {
+  text-align: center;
+}
+main .info-section p {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.7rem;
+  line-height: 25px;
+  padding: 0px 25px;
 }/*# sourceMappingURL=estilos.css.map */
