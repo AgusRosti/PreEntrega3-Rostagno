@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
-.main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
+.main-p .sec-r .card-recetas .card .card-title, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
   text-align: center;
   padding-bottom: 10px;
   color: #E4FA9D;
@@ -9,7 +9,7 @@
   font-size: 1.5rem;
 }
 
-.main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .pedidos-card .card .card-body .card-title {
+.main-p .sec-r .r-t, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .pedidos-card .card .card-body .card-title {
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
   color: #E4FF8E;
@@ -494,4 +494,31 @@
   transform: 1seg;
   cursor: pointer;
   box-shadow: rgba(67, 252, 50, 0.17) 0px -23px 25px 0px inset, rgba(107, 107, 107, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.main-p {
+  padding: 20px 10px;
+}
+.main-p .sec-r .r-t {
+  color: #37401b;
+  text-shadow: none;
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.main-p .sec-r .card-recetas {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+.main-p .sec-r .card-recetas .card {
+  text-align: center;
+}
+.main-p .sec-r .card-recetas .card img {
+  width: 128px;
+  height: 150px;
+}
+.main-p .sec-r .card-recetas .card .card-title {
+  letter-spacing: 1.3px;
+  font-size: 1.25rem;
 }/*# sourceMappingURL=estilos.css.map */
