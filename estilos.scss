@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2? family= Amatic+SC:wght@700 & family= El tipo más afortunado & family= Marcador+permanente & family= Shadows+Into+Light & mostrar=cambiar');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+
 
 //font-family: 'Amatic SC', cursive;
 //font-family: 'Luckiest Guy', cursive;
@@ -10,11 +11,16 @@ $color-2: #E4FF8E;
 $color-3: #E4FA9D;
 $color-4: #37401b;
 $text-titulos: 'Luckiest Guy', cursive;
+$text-2: 'Permanent Marker', cursive;
+$text-3: 'Shadows Into Light', cursive;
+$text-4: 'Amatic SC', cursive;
+
 
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+    font-family: $text-3;
 }
 
 
@@ -34,17 +40,17 @@ $text-titulos: 'Luckiest Guy', cursive;
         flex-direction: column;
 
         .sec-s1{
-            letter-spacing: 1.5px;
-            font-family: 'Luckiest Guy', cursive;;
-            font-size: 2rem;
+            letter-spacing: 1.8px;
+            font-family: $text-titulos;
+            font-size: 2.2rem;
             color: $color-4;
         }
 
         .sec-s2{
-            letter-spacing: 5px;
-            font-size: 4rem;
+            letter-spacing: 10px;
+            font-family: $text-titulos;
+            font-size: 4.2rem;
             color: $color-4;
-            text-shadow: 6px 1px 20px $color-1;
         }
     }
 }
@@ -64,12 +70,13 @@ $text-titulos: 'Luckiest Guy', cursive;
         .cont2-t{
             grid-column: 1/2;
             grid-row: 1/2;
-            padding: 15px;
-            font-size: 1.3rem;
+            font-family: $text-4;
+            font-size: 2.3rem;
             color: $color-2;
-            text-shadow: 0px 3px 4px black;
+            text-shadow: 5px 3px 4px $color-4;
             letter-spacing: 2px;
         }
+
         .cont2-img{
             grid-column: 2/3;
             grid-row: 1/2;
@@ -77,25 +84,31 @@ $text-titulos: 'Luckiest Guy', cursive;
             width: 130px;
             transform: rotate(10deg);
         }
+
         .cont2-st{
             grid-column: 1/3;
             grid-row: 2/3;
-            margin-block: 10px;
-            font-size: 1rem;
+            margin-bottom: 10px;
+            font-family: $text-2;
+            font-size: 1.2rem;
             line-height: 15px;
             color: $color-3;
         }
+
         .cont2-p{
             grid-column: 1/3;
             grid-row: 3/4;
-            line-height: 17px;
-            font-size: 1.1rem;
+            line-height: 20px;
+            font-size: 1.3rem;
+            letter-spacing: 1.5px;
             color: $color-4;
         }
+
         .cont2-p2{
             grid-column: 1/3;
             grid-row: 4/5;
             line-height: 15px;
+            font-size: 1.4rem;
             font-style: italic;
             color: $color-4;
         }
@@ -114,14 +127,14 @@ $text-titulos: 'Luckiest Guy', cursive;
         flex-direction: column;
         align-items: center;
         justify-content: stretch;
-    
 
         .cont3-t{
         text-align: center;
         padding-bottom: 10px;
         color: $color-3;
-        text-shadow: 1px 2px 4px $color-2;
-        letter-spacing: 2px;
+        font-family: $text-titulos;
+        text-shadow: 1px 2px 4px $color-4;
+        letter-spacing: 3px;
         font-size: 1.5rem;
         }
     
@@ -137,38 +150,39 @@ $text-titulos: 'Luckiest Guy', cursive;
         }
 
         .sec3-p{
-            letter-spacing: .5px;
-            font-size: 1.2rem;
+            text-decoration: none;
+            letter-spacing: 1.8px;
+            font-family: $text-4;
+            font-size: 1.5rem;
             color: $color-3;
             background-color: $color-4;
             border: none;
-            border-radius: 20px;
+            border-radius: 40px;
             padding: 5px 25px;
         }
     }
 
     .sec-productos{
-        padding-top: 40px;
+        padding: 40px 10px;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 1fr 1fr 1fr 1fr;
-        column-gap: 5px;
         place-items: center;
         text-align: center;
 
         h4{
-            font-size: 1rem;
-            letter-spacing: .5px;
-            padding-inline: 5px;
-            line-height: 15px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            padding-inline: 10px;
+            line-height: 25px;
             color: $color-4;
         }
 
         h5{
-            font-size: .6rem;
+            font-size: 1rem;
             letter-spacing: 1px;
-            padding-inline: 5px;
-            line-height: 12px;
+            padding-inline: 15px;
+            line-height: 15px;
         }
 
         .text1{
@@ -176,11 +190,13 @@ $text-titulos: 'Luckiest Guy', cursive;
             grid-row: 1/2;
             align-self: flex-end;
         }
+
         .stext1{
             grid-column: 1/2;
             grid-row: 2/3;
-            align-self: flex-start;
+            align-self: flex-center;
         }
+
         .img1{
             grid-column: 1/2;
             grid-row: 3/5;
@@ -191,11 +207,13 @@ $text-titulos: 'Luckiest Guy', cursive;
             grid-row: 3/4;
             align-self: flex-end;
         }
+
         .stext2{
             grid-column: 2/3;
             grid-row: 4/5;
             align-self: flex-start;
         }
+
         .img2{
             grid-column: 2/3;
             grid-row: 1/3;
@@ -206,11 +224,13 @@ $text-titulos: 'Luckiest Guy', cursive;
             grid-row: 1/2;
             align-self: flex-end;
         }
+
         .stext3{
             grid-column: 3/4;
             grid-row: 2/3;
             align-self: flex-start;
         }
+
         .img3{
             grid-column: 3/4;
             grid-row: 3/5;
@@ -220,7 +240,6 @@ $text-titulos: 'Luckiest Guy', cursive;
         img{
             width: 100px;
             height: 100px;
-            box-shadow: 2px 5px 5px $color-2;
         }
 
     }
@@ -239,34 +258,38 @@ $text-titulos: 'Luckiest Guy', cursive;
         padding-bottom: 50px;
 
         h3{
+            font-family: $text-titulos;
             font-size: 1.5rem;
             letter-spacing: 2px;
             font-weight: bolder;
             text-shadow: 3px 0px 5px $color-1;
         }
+
         h4{
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 20px;
         }
-        
+
         .h4-2{
             padding-bottom: 10px;
         }
 
         .boton{
-            letter-spacing: .5px;
-            font-size: 1.2rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: $text-4;
+            font-size: 1.5rem;
             color: $color-3;
             background-color: $color-4;
             border: none;
-            border-radius: 20px;
-            padding: 10px 10px;
-    }
+            border-radius: 40px;
+            padding: 2px 15px;
         }
     }
 
     .sec4-cont{
         height: auto;
+        padding-inline: 15px;
 
             .sec4-img{
                 display: none;
@@ -279,13 +302,16 @@ $text-titulos: 'Luckiest Guy', cursive;
 
                 .sec4-t{
                     text-shadow: 4px 5px 10px $color-4;
+                    font-family: $text-titulos;
                     font-size: 2rem;
                     letter-spacing: .2rem;
                 }
 
                 .sec4-p{
+                    font-family: $text-4;
+                    font-size: 1.5rem;
                     color: $color-4;
-                    line-height: 15px;
+                    line-height: 25px;
                 }
                 
 
@@ -299,58 +325,22 @@ $text-titulos: 'Luckiest Guy', cursive;
                         font-size: 1.2rem;
                         line-height: 25px;
                         color: $color-4;
+                        padding-bottom: 10px;
                     }
 
                     .sec4-b{
-                        letter-spacing: .5px;
-                        font-size: 1.2rem;
+                        text-decoration: none;
+                        letter-spacing: 1.5px;
+                        font-family: $text-4;
+                        font-size: 1.5rem;
                         color: $color-3;
                         background-color: $color-4;
                         border: none;
-                        border-radius: 20px;
-                        padding: 5px 25px;
-                    }
+                        border-radius: 40px;
+                        padding: 5px 25px;}
                 }
-            }
-}
-
-.footer{
-    background-color: $color-4;
-    color: $color-3;
-    padding: 15px 10px;
-    
-    .foot-1{
-        text-align: center;
-        font-size: 1.5rem;
-        padding-inline: 5px;
-    }
-
-    .foot-flex{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: end;
-        padding: 10px 0px;
-
-        .foot-1{
-
-            .none-mobile{
-                display: none;
-            }
-
-            img{
-                align-self: start;
-                width: 100px;
-            }
-        }   
-        
-        .foot-2{
-            line-height: 15px;
-
-            h6{
-                color: $color-1;
             }
         }
 
-    }
+
 }
