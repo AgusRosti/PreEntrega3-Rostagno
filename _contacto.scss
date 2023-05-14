@@ -28,12 +28,10 @@
     
     .form-c{
         @include flex (flex, column, center, center);
+        @include bg-img(center, cover, no-repeat);
         padding-block: 30px;
         margin: 20px 15px;
         gap: 10px;
-        background-image: url(./img/fondo3.png);
-        background-position: center;
-        background-size: cover;
         border-radius: 30px;
 
         div{

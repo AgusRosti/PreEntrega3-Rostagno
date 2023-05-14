@@ -53,6 +53,8 @@
         .menosc-flex{
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
     
             .img-thumbnail{
                 width: 150px;
@@ -62,7 +64,6 @@
 
         h4{
             @extend %subtitulos;
-            color: wheat;
             font-size: 1.4rem;
             line-height: 20px;
         }
