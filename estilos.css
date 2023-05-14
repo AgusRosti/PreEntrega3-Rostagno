@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
-.formularios h3, .main-p .sec-r .card-recetas .card .card-title, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .sec4 .sec4-cont .sec4-texto .sec4-t, .sec3 .sec-cont3 .cont3-t {
+.formularios h3, .main-p .sec-r .card-recetas .card .card-title, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .main1 .sec4 .sec4-cont .sec4-texto .sec4-t, .main1 .sec3 .sec-cont3 .cont3-t {
   text-align: center;
   padding-bottom: 10px;
   color: #E4FA9D;
@@ -18,21 +18,21 @@
   line-height: 30px;
 }
 
-.formularios p, .main-p .sec2-n .flex-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .sec4 .sec4-tit h4, .sec3 .sec-productos h4, .sec2 .sec-cont2 .cont2-p {
+.formularios p, .main-p .sec2-n .flex-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit h4, .main1 .sec3 .sec-productos h4, .main1 .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
   color: #37401b;
 }
 
-.main-p .sec1-send .send-content .nav-mapa ul li, .sec4 .sec4-tit .h4-2, .sec3 .sec-productos h5, .sec2 .sec-cont2 .cont2-p2 {
+.main-p .sec1-send .send-content .nav-mapa ul li, .main1 .sec4 .sec4-tit .h4-2, .main1 .sec3 .sec-productos h5, .main1 .sec2 .sec-cont2 .cont2-p2 {
   line-height: 15px;
   font-size: 1.4rem;
   font-style: italic;
   color: #37401b;
 }
 
-.formularios .form-c div input[type=submit], .main-p .sec2-n .flex-n .n-b, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .sec4 .sec4-tit .boton, .sec3 .sec-cont3 .sec3-p {
+.formularios .form-c div input[type=submit], .main-p .sec2-n .flex-n .n-b, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .sec-cont3 .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -42,6 +42,7 @@
   border: none;
   border-radius: 40px;
   padding: 2px 15px;
+  margin-top: 10px;
   transform: 1seg;
   cursor: pointer;
   box-shadow: rgba(128, 252, 117, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -68,43 +69,43 @@
   font-size: 1.5rem;
 }
 
-.sec1 {
-  height: auto;
-  background-image: url(./img/fondo3.png);
+.main1 {
+  background-image: url(./img/fondo4.png);
   background-position: center;
   background-size: cover;
+}
+.main1 .sec1 {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.sec1 .sec-cont1 {
+.main1 .sec1 .sec-cont1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-block-size: 360px;
 }
-.sec1 .sec-cont1 .sec-s1 {
+.main1 .sec1 .sec-cont1 .sec-s1 {
   letter-spacing: 1.8px;
   font-size: 2.2rem;
-  color: #37401b;
+  color: #E4FF8E;
   font-family: "Luckiest Guy", cursive;
-  text-shadow: 5px 10px 20px rgb(158, 206, 46);
+  text-shadow: 5px 10px 20px #37401b;
 }
-.sec1 .sec-cont1 .sec-s2 {
+.main1 .sec1 .sec-cont1 .sec-s2 {
   letter-spacing: 10px;
   font-family: "Luckiest Guy", cursive;
   font-size: 4.2rem;
-  color: #37401b;
-  text-shadow: 5px 10px 20px rgb(158, 206, 46);
+  color: #E4FF8E;
+  text-shadow: 5px 10px 20px #37401b;
 }
-
-.sec2 {
+.main1 .sec2 {
   height: auto;
-  background-color: #B6D456;
 }
-.sec2 .sec-cont2 {
+.main1 .sec2 .sec-cont2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -112,7 +113,7 @@
   text-align: center;
   padding: 2px 10px;
 }
-.sec2 .sec-cont2 .cont2-t {
+.main1 .sec2 .sec-cont2 .cont2-t {
   grid-column: 1/2;
   grid-row: 1/2;
   font-family: "Amatic SC", cursive;
@@ -121,14 +122,14 @@
   text-shadow: 5px 3px 4px #37401b;
   letter-spacing: 2px;
 }
-.sec2 .sec-cont2 .cont2-img {
+.main1 .sec2 .sec-cont2 .cont2-img {
   grid-column: 2/3;
   grid-row: 1/2;
   height: auto;
   width: 130px;
   transform: rotate(10deg);
 }
-.sec2 .sec-cont2 .cont2-st {
+.main1 .sec2 .sec-cont2 .cont2-st {
   grid-column: 1/3;
   grid-row: 2/3;
   margin-bottom: 20px;
@@ -138,39 +139,35 @@
   letter-spacing: 1.5px;
   color: #E4FA9D;
 }
-.sec2 .sec-cont2 .cont2-p {
+.main1 .sec2 .sec-cont2 .cont2-p {
   grid-column: 1/3;
   grid-row: 3/4;
 }
-.sec2 .sec-cont2 .cont2-p2 {
+.main1 .sec2 .sec-cont2 .cont2-p2 {
   grid-column: 1/3;
   grid-row: 4/5;
   line-height: 20px;
 }
-
-.sec3 {
+.main1 .sec3 {
   height: auto;
-  background-image: url(./img/fondo4.png);
-  background-position: cover;
-  background-size: cover;
   padding-top: 20px;
 }
-.sec3 .sec-cont3 {
+.main1 .sec3 .sec-cont3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.sec3 .sec-cont3 .cont3-img {
+.main1 .sec3 .sec-cont3 .cont3-img {
   display: flex;
   justify-content: center;
   gap: 3px;
   padding-bottom: 20px;
 }
-.sec3 .sec-cont3 .cont3-img img {
+.main1 .sec3 .sec-cont3 .cont3-img img {
   width: 77px;
 }
-.sec3 .sec-productos {
+.main1 .sec3 .sec-productos {
   padding: 40px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -178,102 +175,100 @@
   place-items: center;
   text-align: center;
 }
-.sec3 .sec-productos h5 {
+.main1 .sec3 .sec-productos h5 {
   font-size: 1.2rem;
   padding-inline: 5px;
 }
-.sec3 .sec-productos .text1 {
+.main1 .sec3 .sec-productos .text1 {
   grid-column: 1/2;
   grid-row: 1/2;
   align-self: flex-end;
 }
-.sec3 .sec-productos .stext1 {
+.main1 .sec3 .sec-productos .stext1 {
   grid-column: 1/2;
   grid-row: 2/3;
   align-self: center;
 }
-.sec3 .sec-productos .img1 {
+.main1 .sec3 .sec-productos .img1 {
   grid-column: 1/2;
   grid-row: 3/5;
 }
-.sec3 .sec-productos .text2 {
+.main1 .sec3 .sec-productos .text2 {
   grid-column: 2/3;
   grid-row: 3/4;
   align-self: flex-end;
 }
-.sec3 .sec-productos .stext2 {
+.main1 .sec3 .sec-productos .stext2 {
   grid-column: 2/3;
   grid-row: 4/5;
   align-self: flex-start;
 }
-.sec3 .sec-productos .img2 {
+.main1 .sec3 .sec-productos .img2 {
   grid-column: 2/3;
   grid-row: 1/3;
 }
-.sec3 .sec-productos .text3 {
+.main1 .sec3 .sec-productos .text3 {
   grid-column: 3/4;
   grid-row: 1/2;
   align-self: flex-end;
 }
-.sec3 .sec-productos .stext3 {
+.main1 .sec3 .sec-productos .stext3 {
   grid-column: 3/4;
   grid-row: 2/3;
   align-self: flex-start;
 }
-.sec3 .sec-productos .img3 {
+.main1 .sec3 .sec-productos .img3 {
   grid-column: 3/4;
   grid-row: 3/5;
 }
-.sec3 .sec-productos img {
+.main1 .sec3 .sec-productos img {
   width: 100px;
   height: 100px;
 }
-
-.sec4 {
-  background-color: #37401b;
+.main1 .sec4 {
   padding: 30px 0px;
-  background: rgb(228, 250, 157);
-  background: linear-gradient(185deg, rgb(228, 250, 157) 17%, rgb(182, 212, 86) 40%, rgb(55, 64, 27) 100%);
 }
-.sec4 .sec4-tit {
+.main1 .sec4 .sec4-tit {
+  gap: 10px;
   color: #37401b;
   text-align: center;
   padding-bottom: 50px;
 }
-.sec4 .sec4-tit h3 {
+.main1 .sec4 .sec4-tit h3 {
   font-family: "Luckiest Guy", cursive;
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: bolder;
   text-shadow: 3px 0px 5px #B6D456;
 }
-.sec4 .sec4-tit h4 {
+.main1 .sec4 .sec4-tit h4 {
   padding: 5px;
 }
-.sec4 .sec4-cont {
+.main1 .sec4 .sec4-cont {
   height: auto;
   padding-inline: 15px;
 }
-.sec4 .sec4-cont .sec4-img {
+.main1 .sec4 .sec4-cont .sec4-img {
   display: none;
 }
-.sec4 .sec4-cont .sec4-texto {
+.main1 .sec4 .sec4-cont .sec4-texto {
   text-align: center;
   color: #E4FA9D;
   padding: 5px 10px;
 }
-.sec4 .sec4-cont .sec4-texto .sec4-t {
+.main1 .sec4 .sec4-cont .sec4-texto .sec4-t {
+  color: #B6D456;
   font-size: 2.3rem;
 }
-.sec4 .sec4-cont .sec4-texto .sec4-p {
+.main1 .sec4 .sec4-cont .sec4-texto .sec4-p {
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
-  color: #E4FF8E;
-  text-shadow: 5px 3px 4px #37401b;
+  color: #B6D456;
+  text-shadow: 0.5px 0px 1px #37401b;
   letter-spacing: 2px;
   line-height: 30px;
 }
-.sec4 .sec4-cont .sec4-texto .sec4-div {
+.main1 .sec4 .sec4-cont .sec4-texto .sec4-div {
   background-color: #B6D456;
   border-radius: 10px;
   padding: 20px;
