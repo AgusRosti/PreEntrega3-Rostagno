@@ -1,16 +1,15 @@
-$breakpoints: (
-    celu: 480px,
-    tablet: 800px,
-    pc: 1024px
-);
+@mixin tablet {
 
-@mixin responsive($font-size, $imagenes, $botones: $breakpoints) {
+    @media screen and (min-width: 570px){
 
-    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
-    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+        @content;
     }
-    
-    @media screen and (min-width: #{$mq-breakpoint}) {
-    @content;
+}
+
+@mixin computadora {
+
+    @media screen and (min-width: 992px){
+
+        @content;
     }
 }
