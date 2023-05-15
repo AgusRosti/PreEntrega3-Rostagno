@@ -277,6 +277,21 @@
   padding: 20px;
   box-shadow: 5px 5px 10px #37401b;
 }
+.btn-wsp {
+  position: fixed;
+  background-color: #00bb2d;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+}
+.btn-wsp .bi-whatsapp {
+  font-size: 30px;
+  color: white;
+}
+
 .footer {
   background-color: #37401b;
   text-align: center;
