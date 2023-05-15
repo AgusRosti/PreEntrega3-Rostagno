@@ -76,6 +76,10 @@
   background-repeat: no-repeat;
 }
 .main1 .sec1 {
+  background-image: url(./img/fondo3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -366,16 +370,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/fondo5.png);
-  background-position: center;
+  background-color: #E4FA9D;
   padding: 10px;
   margin: 15px;
-  border: 1px solid #E4FF8E;
+  border: 1px solid grey;
 }
 .main-p .pedidos-card .card .card-img-top {
   width: 200px;
   height: 150px;
   border: 3px solid #E4FF8E;
+  border: 1px solid grey;
 }
 .main-p .pedidos-card .card .card-body {
   line-height: 5px;
@@ -449,6 +453,7 @@
   height: 200px;
 }
 .main-p .menoscarne h4 {
+  color: #E4FF8E;
   font-size: 1.4rem;
   line-height: 20px;
 }
@@ -538,9 +543,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #E4FF8E;
+  border: 1px solid grey;
   padding-block: 30px;
   margin: 20px 15px;
   gap: 10px;

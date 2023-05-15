@@ -65,7 +65,7 @@ $text-4: 'Amatic SC', cursive;
     align-items: $aligne;
 }
 
-@mixin bg-img ($position, $size, $repeat){
+@mixin bgimg ($position, $size, $repeat){
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,9 +94,11 @@ $text-4: 'Amatic SC', cursive;
 
 .main1{
     background-image: url(./img/fondo4.png);
-    @include bg-img(center, cover, no-repeat);
+    @include bgimg(center, cover, no-repeat); 
 
     .sec1{
+        background-image: url(./img/fondo3.png);
+        @include bgimg(center,cover ,no-repeat);
         height: 100vh;
         @include flex (flex, column, center, center);
 
