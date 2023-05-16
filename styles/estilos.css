@@ -19,7 +19,7 @@
   line-height: 30px;
 }
 
-.tips-sec .tips-list, .formularios p, .main-p .sec2-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
+.tips-sec .tips-list, .formularios p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
@@ -33,7 +33,7 @@
   color: #37401b;
 }
 
-.formularios .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .razones .video-veg a, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .sec3-p {
+.formularios .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -49,7 +49,7 @@
   box-shadow: rgba(128, 252, 117, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.formularios .form-c div input[type=submit]:visited, .main-p .razones .video-veg a:visited, .main-p .razones a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .sec3-p:visited {
+.formularios .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .sec3-p:visited {
   color: #37401b;
   background-color: #E4FA9D;
   box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -965,13 +965,12 @@
   }
 }
 .main-p section .sec1-nosotros .p3 {
-  color: #E4FF8E;
+  color: #37401b;
 }
 @media screen and (min-width: 570px) {
   .main-p section .sec1-nosotros .p3 {
     grid-column: 1/2;
     grid-row: 6/8;
-    color: #37401b;
   }
 }
 @media screen and (min-width: 992px) {
@@ -981,8 +980,9 @@
   }
 }
 .main-p section .sec1-nosotros .t3 {
+  color: #37401b;
+  text-shadow: 1px 0px 1px #E4FF8E;
   margin-block: 10px;
-  color: wheat;
 }
 @media screen and (min-width: 570px) {
   .main-p section .sec1-nosotros .t3 {
@@ -1003,45 +1003,13 @@
   padding-top: 15px;
 }
 .main-p .menoscarne {
-  padding: 40px 10px 15px;
+  padding: 40px 15px 0px;
   text-align: center;
-}
-@media screen and (min-width: 992px) {
-  .main-p .menoscarne {
-    padding-inline: 100px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main-p .menoscarne h3 {
-    font-size: 3.5rem;
-  }
-}
-.main-p .menoscarne .menosc-flex {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-}
-.main-p .menoscarne .menosc-flex .img-thumbnail {
-  width: 150px;
-  height: 200px;
-}
-@media screen and (min-width: 570px) {
-  .main-p .menoscarne .menosc-flex .img-thumbnail {
-    width: 300px;
-    height: 350px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main-p .menoscarne .menosc-flex .img-thumbnail {
-    width: 400px;
-    height: 450px;
-  }
 }
 .main-p .menoscarne h3 {
   color: #E4FF8E;
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: 1.7rem;
+  line-height: 25px;
 }
 @media screen and (min-width: 570px) {
   .main-p .menoscarne h3 {
@@ -1058,6 +1026,8 @@
 }
 .main-p .menoscarne h4 {
   color: #37401b;
+  font-size: 1.5rem;
+  line-height: 25px;
 }
 @media screen and (min-width: 570px) {
   .main-p .menoscarne h4 {
@@ -1067,94 +1037,110 @@
 }
 @media screen and (min-width: 992px) {
   .main-p .menoscarne h4 {
-    order: -1;
+    padding: 10px 25px;
   }
 }
-.main-p .razones {
-  margin-inline: 25px;
-  line-height: 20px;
-  color: #E4FF8E;
-  text-align: center;
+.main-p .menoscarne div {
+  padding-bottom: 40px;
 }
-@media screen and (min-width: 992px) {
-  .main-p .razones {
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div {
     display: flex;
-  }
-}
-.main-p .razones ol {
-  padding-inline: 10px;
-}
-@media screen and (min-width: 570px) {
-  .main-p .razones ol {
-    padding-left: 50px;
-    padding-block: 20px;
-    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px 40px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-p .razones ol {
-    font-size: 3rem;
+  .main-p .menoscarne div {
+    justify-content: space-around;
   }
 }
-.main-p .razones h4 {
-  padding-block: 3px;
+.main-p .menoscarne div img {
+  display: none;
 }
 @media screen and (min-width: 570px) {
-  .main-p .razones h4 {
-    font-size: 1.8rem;
-    padding-inline: 30px;
-    line-height: 30px;
+  .main-p .menoscarne div img {
+    display: flex;
+    justify-self: center;
+    max-width: 300px;
+    height: auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol {
+    display: inline-block;
+    width: 50%;
+    align-self: center;
+  }
+}
+.main-p .menoscarne div .div-ol ol {
+  color: #E4FF8E;
+  padding-inline: 25px;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol ol {
     text-align: start;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-p .razones h4 {
-    margin-bottom: 20px;
-    letter-spacing: 3px;
+  .main-p .menoscarne div .div-ol ol {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+.main-p .menoscarne div .div-ol ol li {
+  padding-block: 5px;
+  line-height: 25px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol ol li {
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne div .div-ol ol li {
+    line-height: 35px;
+    padding-block: 10px;
   }
 }
 @media screen and (min-width: 570px) {
-  .main-p .razones a {
+  .main-p .menoscarne div .div-ol a {
     font-size: 1.6rem;
     padding: 3px 25px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-p .razones a {
+  .main-p .menoscarne div .div-ol a {
     font-size: 2rem;
     padding: 3px 45px;
   }
-  .main-p .razones a:hover {
+  .main-p .menoscarne div .div-ol a:hover {
     color: #37401b;
     background-color: #E4FA9D;
     box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transition: 1.5seg;
   }
 }
-.main-p .razones .video-veg {
-  margin-top: 60px;
-}
-@media screen and (min-width: 570px) {
-  .main-p .razones .video-veg a {
-    font-size: 1.6rem;
-    padding: 3px 25px;
-  }
+.main-p .menoscarne .vid-mc iframe {
+  width: 400px;
+  border: 1px solid #E4FF8E;
+  padding: 10px;
 }
 @media screen and (min-width: 992px) {
-  .main-p .razones .video-veg a {
-    display: none;
-  }
-}
-.main-p .razones .video-veg .menoscarne {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  .main-p .razones .video-veg .menoscarne {
-    display: flex;
+  .main-p .menoscarne .vid-mc iframe {
+    width: 560px;
+    height: 315px;
+    border: 2px solid #E4FF8E;
   }
 }
 .main-p .sec2-n {
-  padding: 50px 20px 10px;
+  padding: 10px 10px 30px;
 }
 .main-p .sec2-n .flex-n {
   display: flex;
@@ -1186,7 +1172,7 @@
     font-size: 2rem;
     letter-spacing: 3px;
     padding-inline: 150px;
-    line-height: 50px;
+    line-height: 40px;
   }
 }
 .main-p .sec2-n .n-b {

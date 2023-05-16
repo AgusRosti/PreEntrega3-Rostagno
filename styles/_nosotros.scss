@@ -98,12 +98,13 @@
 
 
             .p3{
-                color: $color-2;
+                color: $color-4;
+
                 @include tablet {
                     grid-column: 1/2;
                     grid-row: 6/8;
-                    color: $color-4
                 }
+
                 @include computadora {
                     font-size: 2rem;
                     line-height: 30px;
@@ -112,8 +113,9 @@
 
             .t3{
                 @extend %subtitulos;
+                color: $color-4;
+                text-shadow: 1px 0px 1px $color-2;
                 margin-block: 10px;
-                color: wheat;
                 @include tablet {
                     grid-column: 1/2;
                     grid-row: 8/10;
@@ -135,54 +137,20 @@
     }
 
     .menoscarne{
-        padding: 40px 10px 15px;
+        padding: 40px 15px 0px;
         text-align: center;
-
-        @include computadora {
-            padding-inline: 100px;
-        }
-
-        h3{
-            @extend %titulos;
-
-            @include computadora {
-                font-size: 3.5rem;
-            }
-        }
-
-        .menosc-flex{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 10px;
-    
-            .img-thumbnail{
-                width: 150px;
-                height: 200px;
-
-                @include tablet {
-                    width: 300px;
-                    height: 350px;
-                }
-
-                @include computadora {
-                    width: 400px;
-                    height: 450px;
-                }
-            }
-        }
 
         h3{
             @extend %titulos;
             color: $color-2;
-            font-size: 1.4rem;
-            line-height: 20px;
-
+            font-size: 1.7rem;
+            line-height: 25px;
+    
             @include tablet {
             font-size: 2.3rem;
             line-height: 40px;
             }
-
+    
             @include computadora {
                 font-size: 3.2rem;
                 letter-spacing: 5px;
@@ -193,120 +161,133 @@
         h4{
             @extend %subtitulos;
             color: $color-4;
-
+            font-size: 1.5rem;
+            line-height: 25px;
+    
             @include tablet {
                 font-size: 2.3rem;
                 line-height: 40px;
                 }
-            
-                
-            @include computadora {
-                order: -1;
-            }
-        }
-    }
-
-    .razones{
-        margin-inline: 25px;
-        @extend %parrafos;
-        line-height: 20px;
-        color: $color-2;
-        text-align: center;
-
-        @include computadora {
-            display: flex;
-        }
-
-
-        ol{
-            padding-inline: 10px;
-
-            @include tablet {
-                padding-left: 50px;
-                padding-block: 20px;
-                font-size: 2rem;
-                }
 
             @include computadora {
-                 
-                font-size: 3rem;
+                padding: 10px 25px;
             }
         }
 
-        h4{
-            padding-block: 3px;
+        div{
+            padding-bottom: 40px;
 
             @include tablet {
-                font-size: 1.8rem;
-                padding-inline: 30px;
-                line-height: 30px;
-                text-align: start;
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                padding: 20px 0px 40px;
+            }
+
             @include computadora {
-                margin-bottom: 20px;
-                letter-spacing: 3px
-            }
-        }
-
-        a{
-            @extend %botones;
-
-            &:visited{
-                @extend %animacion-b;
+                justify-content: space-around;
             }
 
-            @include tablet {
-                font-size: 1.6rem;
-                padding: 3px 25px;
-                }
-
-                @include computadora {
-                    font-size: 2rem;
-                    padding: 3px 45px;
-    
-                    &:hover{
-                        color: $color-4;
-                        background-color: $color-3;
-                        box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-                        transition: 1.5seg;
-                    }
-                }
-        }
-
-        .video-veg{
-            margin-top: 60px ;
-
-            a{
-                @extend %botones;
-    
-                &:visited{
-                    @extend %animacion-b;
-                }
-    
-                @include tablet {
-                    font-size: 1.6rem;
-                    padding: 3px 25px;
-                    }
-    
-                    @include computadora {
-                        display: none;
-                    }
-            }
-
-            .menoscarne{
+            img{
                 display: none;
 
-                @include computadora {
+                @include tablet {
                     display: flex;
-                    
-                }
+                    justify-self: center;
+                    max-width: 300px;
+                    height: auto;
+                    width: 50%;
+                    }
+            }
 
+            .div-ol{
+                
+                @include tablet {
+                    display: inline-block;
+                    width: 50%;
+                    align-self: center;
+                    }
+
+                ol{
+                    @extend %parrafos;
+                    color: $color-2;
+                    padding-inline: 25px;
+                    font-size: 1.2rem;
+                    text-align: justify;
+
+                    @include tablet {
+                        text-align: start;
+                        font-size: 1.7rem;
+                        }
+                    
+                        
+                    @include computadora {
+                        text-align: center;
+                        font-size: 1.7rem;
+                    }
+    
+                        li{
+                            padding-block: 5px;
+                            line-height: 25px;
+
+                            @include tablet {
+                                line-height:30px;
+                                }
+                            
+                                
+                            @include computadora {
+                                line-height: 35px;
+                                padding-block: 10px
+                            }
+                        }
+                }
+    
+                a{
+                    @extend %botones;
+            
+                    &:visited{
+                        @extend %animacion-b;
+                    }
+            
+                    @include tablet {
+                        font-size: 1.6rem;
+                        padding: 3px 25px;
+                        }
+            
+                        @include computadora {
+                            font-size: 2rem;
+                            padding: 3px 45px;
+
+                            &:hover{
+                                color: $color-4;
+                                background-color: $color-3;
+                                box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                                transition: 1.5seg;
+                            }
+                        }
+                }
+            }
+        }
+
+        .vid-mc{
+            
+            iframe{
+                width: 400px;
+                border: 1px solid $color-2;
+                padding: 10px;
+
+                @include computadora {
+                    width: 560px;
+                    height: 315px;
+                    border: 2px solid $color-2;
+                }
             }
         }
     }
 
     .sec2-n{
-        padding: 50px 20px 10px;
+        padding:10px 10px 30px;
 
         .flex-n{
             @include flex(flex,column,center,center);
@@ -335,7 +316,7 @@
                     font-size: 2rem;
                     letter-spacing: 3px;
                     padding-inline: 150px;
-                    line-height: 50px
+                    line-height: 40px
                 }
             }
 
