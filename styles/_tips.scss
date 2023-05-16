@@ -51,13 +51,13 @@
             align-items: center;
         }
 
-        ol{
+        .ol{
             @include computadora {
                 padding-inline: 20px;
             }
 
             
-            li{
+            .li{
                 padding-block: 10px;
 
                 @include tablet {

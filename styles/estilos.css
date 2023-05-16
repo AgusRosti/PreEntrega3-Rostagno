@@ -33,7 +33,7 @@
   color: #37401b;
 }
 
-.formularios .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .sec3-p {
+.formularios .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .razones .video-veg a, .main-p .razones a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -49,7 +49,7 @@
   box-shadow: rgba(128, 252, 117, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.formularios .form-c div input[type=submit]:visited, .main-p .razones a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .sec3-p:visited {
+.formularios .form-c div input[type=submit]:visited, .main-p .razones .video-veg a:visited, .main-p .razones a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .sec3-p:visited {
   color: #37401b;
   background-color: #E4FA9D;
   box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -141,7 +141,7 @@
   letter-spacing: 10px;
   font-family: "Luckiest Guy", cursive;
   font-size: 4.2rem;
-  color: #E4FF8E;
+  color: #B6D456;
   text-shadow: 5px 10px 20px #37401b;
 }
 @media screen and (min-width: 570px) {
@@ -631,7 +631,7 @@
   width: 42px;
   border-radius: 50%;
   bottom: 10px;
-  right: 10px;
+  right: 15px;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
@@ -1057,12 +1057,26 @@
   color: #E4FF8E;
   text-align: center;
 }
+@media screen and (min-width: 992px) {
+  .main-p .razones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .main-p .razones ol {
   padding-inline: 10px;
 }
+@media screen and (min-width: 570px) {
+  .main-p .razones ol {
+    padding-left: 50px;
+    padding-block: 20px;
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .main-p .razones ol {
-    padding-left: 200px;
+    padding-left: 100px;
     font-size: 3rem;
   }
 }
@@ -1072,7 +1086,8 @@
 @media screen and (min-width: 570px) {
   .main-p .razones h4 {
     font-size: 1.8rem;
-    line-height: 20px;
+    padding-inline: 30px;
+    line-height: 30px;
     text-align: start;
   }
 }
@@ -1098,6 +1113,28 @@
     background-color: #E4FA9D;
     box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transition: 1.5seg;
+  }
+}
+.main-p .razones .video-veg {
+  margin-top: 60px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .razones .video-veg a {
+    font-size: 1.6rem;
+    padding: 3px 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .razones .video-veg a {
+    display: none;
+  }
+}
+.main-p .razones .video-veg .menoscarne {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .main-p .razones .video-veg .menoscarne {
+    display: flex;
   }
 }
 .main-p .sec2-n {
@@ -1358,20 +1395,20 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .tips-sec .tips-list ol {
+  .tips-sec .tips-list .ol {
     padding-inline: 20px;
   }
 }
-.tips-sec .tips-list ol li {
+.tips-sec .tips-list .ol .li {
   padding-block: 10px;
 }
 @media screen and (min-width: 570px) {
-  .tips-sec .tips-list ol li {
+  .tips-sec .tips-list .ol .li {
     padding-block: 18px;
   }
 }
 @media screen and (min-width: 992px) {
-  .tips-sec .tips-list ol li {
+  .tips-sec .tips-list .ol .li {
     padding-block: 20px;
   }
 }

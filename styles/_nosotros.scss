@@ -194,11 +194,24 @@
         color: $color-2;
         text-align: center;
 
+        @include computadora {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        
+
         ol{
             padding-inline: 10px;
 
+            @include tablet {
+                padding-left: 50px;
+                padding-block: 20px;
+                font-size: 2rem;
+                }
+
             @include computadora {
-                padding-left: 200px;
+                padding-left: 100px;
                 font-size: 3rem;
             }
         }
@@ -208,7 +221,8 @@
 
             @include tablet {
                 font-size: 1.8rem;
-                line-height: 20px;
+                padding-inline: 30px;
+                line-height: 30px;
                 text-align: start;
                 }
             @include computadora {
@@ -240,6 +254,37 @@
                         transition: 1.5seg;
                     }
                 }
+        }
+
+        .video-veg{
+            margin-top: 60px ;
+
+            a{
+                @extend %botones;
+    
+                &:visited{
+                    @extend %animacion-b;
+                }
+    
+                @include tablet {
+                    font-size: 1.6rem;
+                    padding: 3px 25px;
+                    }
+    
+                    @include computadora {
+                        display: none;
+                    }
+            }
+
+            .menoscarne{
+                display: none;
+
+                @include computadora {
+                    display: flex;
+                    
+                }
+
+            }
         }
     }
 
