@@ -81,7 +81,6 @@
       opacity: 1;
     }
   }
-  
     
                     .card-title{
                         @extend %titulos;
@@ -91,6 +90,11 @@
                         @include tablet {
                             font-size: 2rem;
                             letter-spacing: 2.5px;
+                        }
+
+                        @include computadora {
+                            font-size: 2.5rem;
+                            letter-spacing: 3.5px;
                         }
                     }
                 }

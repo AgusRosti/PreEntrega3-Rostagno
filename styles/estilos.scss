@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap');
 @import "_medias.scss";
 @import "_variants.scss";
+@import "_navbar.scss";
 
 *{
     margin: 0;
@@ -9,39 +10,14 @@
     font-family: $text-3;
 }
 
-.navbar{
-    background-color: #44521d;
-    font-size: 1.35rem;
-    line-height: 20px;
-    padding-block: 20px;
-    letter-spacing: 2px;
-    font-weight: bold;
-
-    @include computadora {
-        font-size: 1.5rem;
-        padding: 15px 30px;
-    }
-
-    img{
-        @include tablet {
-            width: 150px;
-            height: 60px;
-        }
-    }
-}
-
-.navbar-toggler{
-    border: none;
-    font-size: 1.5rem;
-}
 
 .main1{
-    background-image: url(./img/fondo4.png);
+    background-image: url(../img/fondo4.png);
     @include bgimg(center, cover, no-repeat); 
 
 
     .sec1{
-        background-image: url(./img/fondo3.png);
+        background-image: url(../img/fondo3.png);
         @include bgimg(center,cover ,no-repeat);
         height: 100vh;
         @include flex (flex, column, center, center);
@@ -153,7 +129,7 @@
                 }
 
                 @include computadora {
-                    width: 190px;
+                    width: 220px;
                     grid-column: 1/2;
                     grid-row: 2/3;
                     transform: none;
@@ -262,7 +238,7 @@
                 }
 
                 @include computadora {
-                    width: 150px;
+                    width: 250px;
                     border: 3px solid $color-2;
                 }
                 }
@@ -590,75 +566,9 @@
     }
 }
 
-.footer{
-    background-color: $color-4;
-    text-align: center;
-
-    .foot-text{
-        @include flex (flex, column, center, center);
-        line-height: 20px;
-        padding: 20px 10px;
-        font-size: 1.3rem;
-        color: white;
-
-
-        .foot-1{
-            @extend %titulos;
-            text-shadow: 1px 0px 50px $color-2;
-        }
-
-        .foot-2{
-            font-family: $text-4;
-            font-size: 1.3rem;
-            font-weight: bolder;
-            color: $color-2;
-            letter-spacing: 3px;
-
-        }
-
-        a{
-            color: $color-1;
-            padding: 5px 0px;
-            line-height: 25px;
-            font-size: 1.2rem;
-        }
-
-        img{
-            height: 80px;
-            margin-block: 20px;
-        }
-
-        .redes{
-            margin-top: 20px;
-        }
-
-        .form-control{
-            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-        }
-
-        .btn{
-            @extend %botones;
-            color: $color-4;
-            background-color: $color-3;
-            padding: 2px 25px;
-            transform: 1seg;
-            cursor: pointer;
-            box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-        }
-
-        .iconos{
-            display: flex;
-            gap: 20px;
-
-            i{
-                color: white;
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
+@import "_footer.scss";
 @import "_tienda.scss";
 @import "_nosotros.scss";
 @import "_recetas.scss";
 @import "_contacto.scss";
+@import "_tips.scss"

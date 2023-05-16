@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #44521d;
+    font-size: 1.35rem;
+    line-height: 20px;
+    padding-block: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+    @include computadora {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+
+    img{
+        @include tablet {
+            width: 150px;
+            height: 60px;
+        }
+    }
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.5rem;
+}

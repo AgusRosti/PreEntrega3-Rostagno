@@ -10,7 +10,7 @@
   font-size: 1.5rem;
 }
 
-.main-p .sec-r article .r-t, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .pedidos-card .card .card-body .card-title, .main1 .sec3 h3, .main1 .sec2 .sec-cont2 .cont2-t {
+.tips-sec .tips-h2 h2, .main-p .sec-r article .r-t, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .pedidos-card .card .card-body .card-title, .main1 .sec3 h3, .main1 .sec2 .sec-cont2 .cont2-t {
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
   color: #B6D456;
@@ -19,7 +19,7 @@
   line-height: 30px;
 }
 
-.formularios p, .main-p .sec2-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
+.tips-sec .tips-list, .formularios p, .main-p .sec2-n .n-p, .main-p .razones, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
@@ -56,13 +56,6 @@
   cursor: pointer;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Neucha", cursive;
-}
-
 .navbar {
   background-color: #44521d;
   font-size: 1.35rem;
@@ -89,14 +82,21 @@
   font-size: 1.5rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neucha", cursive;
+}
+
 .main1 {
-  background-image: url(./img/fondo4.png);
+  background-image: url(../img/fondo4.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .main1 .sec1 {
-  background-image: url(./img/fondo3.png);
+  background-image: url(../img/fondo3.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,7 +245,7 @@
 }
 @media screen and (min-width: 992px) {
   .main1 .sec2 .sec-cont2 .cont2-img {
-    width: 190px;
+    width: 220px;
     grid-column: 1/2;
     grid-row: 2/3;
     transform: none;
@@ -357,7 +357,7 @@
 }
 @media screen and (min-width: 992px) {
   .main1 .sec3 .sec-cont3 .cont3-img img {
-    width: 150px;
+    width: 250px;
     border: 3px solid #E4FF8E;
   }
 }
@@ -1233,6 +1233,12 @@
     letter-spacing: 2.5px;
   }
 }
+@media screen and (min-width: 992px) {
+  .main-p .sec-r article .card-recetas .card .card-title {
+    font-size: 2.5rem;
+    letter-spacing: 3.5px;
+  }
+}
 
 .formularios {
   text-align: center;
@@ -1292,5 +1298,99 @@
   .formularios .form-c div .fomr-i,
   .formularios .form-c div textarea {
     width: 300px;
+  }
+}
+.tips-sec {
+  padding: 10px;
+}
+.tips-sec .tips-h2 {
+  text-align: center;
+  padding-inline: 5px;
+}
+@media screen and (min-width: 570px) {
+  .tips-sec .tips-h2 {
+    padding-inline: 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tips-sec .tips-h2 {
+    padding: 20px 50px;
+  }
+}
+.tips-sec .tips-h2 h2 {
+  font-size: 2rem;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 570px) {
+  .tips-sec .tips-h2 h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+    line-height: 37px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tips-sec .tips-h2 h2 {
+    font-size: 4rem;
+    letter-spacing: 3.5px;
+    line-height: 60px;
+  }
+}
+.tips-sec .tips-list {
+  text-align: justify;
+  padding: 25px;
+}
+@media screen and (min-width: 570px) {
+  .tips-sec .tips-list {
+    font-size: 1.7rem;
+    padding: 45px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tips-sec .tips-list {
+    font-size: 2rem;
+    padding-inline: 100px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tips-sec .tips-list ol {
+    padding-inline: 20px;
+  }
+}
+.tips-sec .tips-list ol li {
+  padding-block: 10px;
+}
+@media screen and (min-width: 570px) {
+  .tips-sec .tips-list ol li {
+    padding-block: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tips-sec .tips-list ol li {
+    padding-block: 20px;
+  }
+}
+.tips-sec .video {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 570px) {
+  .tips-sec .video iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tips-sec .video iframe {
+    width: 550px;
+    height: 450px;
+    border: 2px solid #B6D456;
+    padding: 15px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */
