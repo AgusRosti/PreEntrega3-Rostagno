@@ -1285,6 +1285,143 @@
     letter-spacing: 3.5px;
   }
 }
+.main-p .menoscarne {
+  padding: 40px 15px 0px;
+  text-align: center;
+}
+.main-p .menoscarne h3 {
+  color: #E4FF8E;
+  font-size: 1.7rem;
+  line-height: 25px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne h3 {
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne h3 {
+    font-size: 3.2rem;
+    letter-spacing: 5px;
+    line-height: 45px;
+  }
+}
+.main-p .menoscarne h4 {
+  color: #37401b;
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne h4 {
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne h4 {
+    padding: 10px 25px;
+  }
+}
+.main-p .menoscarne div {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne div {
+    justify-content: space-around;
+  }
+}
+.main-p .menoscarne div img {
+  display: none;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div img {
+    display: flex;
+    justify-self: center;
+    max-width: 300px;
+    height: auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol {
+    display: inline-block;
+    width: 50%;
+    align-self: center;
+  }
+}
+.main-p .menoscarne div .div-ol ol {
+  color: #E4FF8E;
+  padding-inline: 25px;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol ol {
+    text-align: start;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne div .div-ol ol {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+.main-p .menoscarne div .div-ol ol li {
+  padding-block: 5px;
+  line-height: 25px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol ol li {
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne div .div-ol ol li {
+    line-height: 35px;
+    padding-block: 10px;
+  }
+}
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne div .div-ol a {
+    font-size: 1.6rem;
+    padding: 3px 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne div .div-ol a {
+    font-size: 2rem;
+    padding: 3px 45px;
+  }
+  .main-p .menoscarne div .div-ol a:hover {
+    color: #37401b;
+    background-color: #E4FA9D;
+    box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 1.5seg;
+  }
+}
+.main-p .menoscarne .vid-mc iframe {
+  width: 400px;
+  border: 1px solid #E4FF8E;
+  padding: 10px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .menoscarne .vid-mc iframe {
+    width: 560px;
+    height: 315px;
+    border: 2px solid #E4FF8E;
+  }
+}
 
 .formularios {
   text-align: center;
