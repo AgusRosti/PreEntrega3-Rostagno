@@ -19,21 +19,21 @@
   line-height: 30px;
 }
 
-.tips-sec .tips-list, .formularios p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
+.tips-sec .tips-list, .formularios p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .prod .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
   color: #37401b;
 }
 
-.formularios nav a, .main-p .sec-r article p, .main-p .sec1-send .send-content .nav-mapa ul li, .main1 .sec4 .sec4-tit .h4-2, .main1 .sec3 .sec-productos div p, .main1 .sec2 .sec-cont2 .cont2-p2 {
+.formularios nav a, .main-p .sec-r article p, .main-p .sec1-send .send-content .nav-mapa ul li, .main1 .sec4 .sec4-tit .h4-2, .main1 .sec3 .prod .sec-productos div p, .main1 .sec2 .sec-cont2 .cont2-p2 {
   line-height: 15px;
   font-size: 1.4rem;
   font-style: italic;
   color: #37401b;
 }
 
-.formularios .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .sec3-p {
+.formularios .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -49,7 +49,7 @@
   box-shadow: rgba(128, 252, 117, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.formularios .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .sec3-p:visited {
+.formularios .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .prod .sec3-p:visited {
   color: #37401b;
   background-color: #E4FA9D;
   box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -370,92 +370,98 @@
     font-size: 2.2rem;
   }
 }
-.main1 .sec3 .sec-productos {
+@media screen and (min-width: 992px) {
+  .main1 .sec3 .prod {
+    padding: 50px 0px 10px;
+  }
+}
+.main1 .sec3 .prod .sec-productos {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   gap: 10px;
 }
 @media screen and (min-width: 570px) {
-  .main1 .sec3 .sec-productos {
+  .main1 .sec3 .prod .sec-productos {
     gap: 30px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main1 .sec3 .sec-productos {
+  .main1 .sec3 .prod .sec-productos {
     gap: 50px;
   }
 }
-.main1 .sec3 .sec-productos div {
+.main1 .sec3 .prod .sec-productos div {
   max-width: 150px;
 }
 @media screen and (min-width: 992px) {
-  .main1 .sec3 .sec-productos div {
+  .main1 .sec3 .prod .sec-productos div {
     max-width: 350px;
   }
 }
-.main1 .sec3 .sec-productos div img {
+.main1 .sec3 .prod .sec-productos div img {
   width: 100px;
   height: 100px;
   border: 2px solid #E4FA9D;
 }
 @media screen and (min-width: 570px) {
-  .main1 .sec3 .sec-productos div img {
+  .main1 .sec3 .prod .sec-productos div img {
     width: 130px;
     height: 130px;
     border: 1.5px solid #E4FF8E;
   }
 }
 @media screen and (min-width: 992px) {
-  .main1 .sec3 .sec-productos div img {
-    width: 200px;
-    height: 200px;
+  .main1 .sec3 .prod .sec-productos div img {
+    width: 300px;
+    height: 300px;
     border: 3px solid #E4FF8E;
   }
 }
-.main1 .sec3 .sec-productos div h3 {
+.main1 .sec3 .prod .sec-productos div h3 {
   font-size: 1.5rem;
   padding-top: 5px;
 }
 @media screen and (min-width: 570px) {
-  .main1 .sec3 .sec-productos div h3 {
+  .main1 .sec3 .prod .sec-productos div h3 {
     font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .main1 .sec3 .sec-productos div h3 {
+  .main1 .sec3 .prod .sec-productos div h3 {
     font-size: 2.5rem;
-    padding: 30px 0px 10px;
+    padding: 10px 0px 5px;
+    color: #37401b;
   }
 }
-.main1 .sec3 .sec-productos div p {
+.main1 .sec3 .prod .sec-productos div p {
   font-size: 1.2rem;
   padding-inline: 5px;
 }
 @media screen and (min-width: 570px) {
-  .main1 .sec3 .sec-productos div p {
+  .main1 .sec3 .prod .sec-productos div p {
     font-size: 1.5rem;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main1 .sec3 .sec-productos div p {
+  .main1 .sec3 .prod .sec-productos div p {
     font-size: 1.8rem;
-    padding: 30px 0px 10px;
+    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 570px) {
-  .main1 .sec3 .sec3-p {
+  .main1 .sec3 .prod .sec3-p {
     font-size: 1.6rem;
     padding: 5px 25px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main1 .sec3 .sec3-p {
+  .main1 .sec3 .prod .sec3-p {
     font-size: 2rem;
     padding: 5px 35px;
   }
-  .main1 .sec3 .sec3-p:hover {
+  .main1 .sec3 .prod .sec3-p:hover {
     color: #37401b;
     background-color: #E4FA9D;
     transition: 1.5seg;
@@ -754,6 +760,7 @@
   .main-p .sec1-send .send-content .nav-mapa ul li {
     font-size: 1.8rem;
     margin-top: 30px;
+    text-align: center;
   }
 }
 .main-p .sec1-send .send-content .nav-mapa ul li a {
