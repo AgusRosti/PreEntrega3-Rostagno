@@ -96,11 +96,10 @@
   background-repeat: no-repeat;
 }
 .main1 .sec1 {
-  background-image: url(../img/fondo3.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+  background-color: #E4FF8E;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,11 +116,12 @@
   justify-content: center;
   align-items: center;
   min-block-size: 360px;
+  z-index: 3;
 }
 .main1 .sec1 .sec-cont1 .sec-s1 {
   letter-spacing: 1.8px;
   font-size: 2.2rem;
-  color: #E4FF8E;
+  color: #B6D456;
   font-family: "Luckiest Guy", cursive;
   text-shadow: 5px 10px 20px #37401b;
 }
@@ -141,7 +141,7 @@
   letter-spacing: 10px;
   font-family: "Luckiest Guy", cursive;
   font-size: 4.2rem;
-  color: #B6D456;
+  color: #E4FF8E;
   text-shadow: 5px 10px 20px #37401b;
 }
 @media screen and (min-width: 570px) {
@@ -185,6 +185,16 @@
     filter: blur(0);
     opacity: 1;
   }
+}
+.main1 .sec1 .waves {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+.main1 .sec1 .waves svg {
+  bottom: 0;
+  left: 0;
 }
 .main1 .sec2 {
   height: auto;
@@ -1466,6 +1476,12 @@
   margin: 20px 15px;
   gap: 10px;
   border-radius: 30px;
+}
+@media screen and (min-width: 992px) {
+  .formularios .form-c {
+    background-color: none;
+    border: none;
+  }
 }
 .formularios .form-c div .fomr-i,
 .formularios .form-c div textarea {

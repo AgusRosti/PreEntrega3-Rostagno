@@ -47,6 +47,11 @@
         gap: 10px;
         border-radius: 30px;
 
+        @include computadora{
+            background-color: none;
+            border: none;
+            }
+
         div{
 
             .fomr-i,
