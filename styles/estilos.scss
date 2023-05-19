@@ -143,7 +143,7 @@
                 }
 
                 @include computadora {
-                    width: 220px;
+                    width: 210px;
                     grid-column: 1/2;
                     grid-row: 2/3;
                     transform: none;
@@ -224,7 +224,7 @@
 
             @include tablet {
                 font-size: 2.1rem;
-                padding: 5px 20px;
+                padding: 25px 20px 5px;
             }
 
             @include computadora {
@@ -235,24 +235,23 @@
         
             .cont3-img{
             display: flex;
-            justify-content: space-evenly;
-            gap:5px;
-            padding-bottom: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            row-gap: 10px;
 
             @include tablet {
                 gap: 25px;
+                margin-block: 20px;
             }
 
                 img{
-                width: 75px;
+                width: 120px;
+                border: 1.5px solid $color-2;
 
-                @include tablet {
-                    width: 95px;
-                    border: 1.5px solid $color-2
-                }
 
                 @include computadora {
-                    width: 250px;
+                    width: 200px;
                     border: 3px solid $color-2;
                 }
                 }
@@ -561,6 +560,7 @@
 }
 
 .btn-wsp{
+    z-index: 3;
     position: fixed; 
     background-color:  #00bb2d;
     height: 42px;
@@ -592,4 +592,4 @@
 @import "_nosotros.scss";
 @import "_recetas.scss";
 @import "_contacto.scss";
-@import "_tips.scss"
+@import "_tips.scss";

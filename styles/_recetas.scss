@@ -1,9 +1,16 @@
 .main-p{
     padding: 20px 10px;
 
+    @include computadora {
+        padding: 30px 100px;
+    }
+
     .sec-r{
+    .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+    @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
         article{
+            padding-bottom: 80px;
 
             .r-t{
                 @extend %subtitulos;
@@ -19,12 +26,21 @@
                     line-height: 45px;
                     color: $color-4
                 }
+
+                @include computadora {
+                    padding: 30px;
+                }
             }
 
             p{
                 @extend %cursiva;
                 text-align: center;
                 font-size: 1.2rem;
+
+                @include computadora {
+                    font-size: 1.5rem;
+                    padding: 30px;
+                }
 
             }
         
@@ -35,7 +51,15 @@
     
                 .card{
                     text-align: center;
-    
+                    transition: all 1s;
+
+                    @include computadora {
+                        &:hover{
+                            transition: all 1s;
+                            transform: scale(1.05); 
+                        }
+                    }
+
                     img{
                         width: 128px;
                         height: 150px;
@@ -48,40 +72,12 @@
                         @include computadora {
                             width: 350px;
                             height: 450px;
-                            border: 2px solid $color-1
+                            border: 2px solid $color-1;
+                            transition: all 1s;
                         }
                     }
+                }
 
-                    .tilt-in-fwd-tr {
-                        -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                                animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    }
-
-@-webkit-keyframes tilt-in-fwd-tr {
-    0% {
-      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-      opacity: 1;
-    }
-  }
-  @keyframes tilt-in-fwd-tr {
-    0% {
-      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-      opacity: 1;
-    }
-  }
-    
                     .card-title{
                         @extend %titulos;
                         letter-spacing: 1.3px;
@@ -102,153 +98,206 @@
         }
     }
 
-    .menoscarne{
-        padding: 40px 15px 0px;
+    .tips-recetas{
+        padding-inline: 15px;
         text-align: center;
 
-        h3{
-            @extend %titulos;
-            color: $color-2;
-            font-size: 1.7rem;
-            line-height: 25px;
-    
-            @include tablet {
-            font-size: 2.3rem;
-            line-height: 40px;
-            }
-    
-            @include computadora {
-                font-size: 3.2rem;
-                letter-spacing: 5px;
-                line-height: 45px
-            }
+        @include tablet {
+            padding-inline: 30px;
         }
 
-        h4{
-            @extend %subtitulos;
-            color: $color-4;
-            font-size: 1.5rem;
-            line-height: 25px;
-    
-            @include tablet {
-                font-size: 2.3rem;
-                line-height: 40px;
-                }
-
-            @include computadora {
-                padding: 10px 25px;
-            }
+        @include computadora {
+            padding-inline: 20px;
         }
 
-        div{
-            padding-bottom: 40px;
-
-            @include tablet {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                padding: 20px 0px 40px;
-            }
+        .sec-tips-r{
+            padding-block: 10px;
 
             @include computadora {
-                justify-content: space-around;
+                padding-top: 30px;
             }
 
-            img{
-                display: none;
+            .h2-tips-r{
+                @extend %titulos;
+                color: $color-1;
+                text-shadow: 1px 2px 2px $color-4;
+                font-size: 1.8rem;
 
                 @include tablet {
-                    display: flex;
-                    justify-self: center;
-                    max-width: 300px;
-                    height: auto;
-                    width: 50%;
-                    }
-            }
-
-            .div-ol{
-                
-                @include tablet {
-                    display: inline-block;
-                    width: 50%;
-                    align-self: center;
-                    }
-
-                ol{
-                    @extend %parrafos;
-                    color: $color-2;
-                    padding-inline: 25px;
-                    font-size: 1.2rem;
-                    text-align: justify;
-
-                    @include tablet {
-                        text-align: start;
-                        font-size: 1.7rem;
-                        }
-                    
-                        
-                    @include computadora {
-                        text-align: center;
-                        font-size: 1.7rem;
-                    }
-    
-                        li{
-                            padding-block: 5px;
-                            line-height: 25px;
-
-                            @include tablet {
-                                line-height:30px;
-                                }
-                            
-                                
-                            @include computadora {
-                                line-height: 35px;
-                                padding-block: 10px
-                            }
-                        }
+                    font-size: 2.1rem;
+                    padding-inline: 80px
                 }
-    
-                a{
-                    @extend %botones;
-            
-                    &:visited{
-                        @extend %animacion-b;
-                    }
-            
-                    @include tablet {
-                        font-size: 1.6rem;
-                        padding: 3px 25px;
-                        }
-            
-                        @include computadora {
-                            font-size: 2rem;
-                            padding: 3px 45px;
-
-                            &:hover{
-                                color: $color-4;
-                                background-color: $color-3;
-                                box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-                                transition: 1.5seg;
-                            }
-                        }
-                }
-            }
-        }
-
-        .vid-mc{
-            
-            iframe{
-                width: 400px;
-                border: 1px solid $color-2;
-                padding: 10px;
 
                 @include computadora {
-                    width: 560px;
-                    height: 315px;
-                    border: 2px solid $color-2;
+                    color: $color-4;
+                    font-size: 3rem;
+                    padding-inline: 80px;
+                }
+            }
+        }
+
+        .estacion{
+
+            @include computadora {
+                padding: 20px 60px
+            }
+
+            .est-tit{
+                @extend %subtitulos;
+                background-color: $color-4;
+                padding: 10px;
+                font-size: 1.85rem;
+
+                @include tablet {
+                    font-size: 2rem;
+                }
+
+                @include computadora {
+                    margin-inline: 100px;
+                    padding: 20px;
+                    font-size: 2.2rem;
+                    letter-spacing: 5px;
+                    line-height: 40px;
+                }
+    
+            }
+
+            .est-p{
+                @extend %parrafos;
+                line-height: 25px;
+
+                @include tablet {
+                    font-size: 1.5rem;
+                }
+
+                @include computadora {
+                    padding: 20px 80px;
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                    line-height: 40px;
+                }
+            }
+
+            .frutas-verduras{
+                @include flex (flex, column, center, center);
+
+                @include computadora {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    gap: 30px;
+                    margin-top: 30px;
+                    border: 4px solid $color-1;
+                    padding: 30px;
+                    background-color: $color-3;
+                }
+
+                .estaciones{
+
+                    @include computadora {
+                        width: 300px
+                    }
+
+                    .estaciones-t{
+                        @extend %titulos;
+
+                        @include computadora {
+                            font-size: 2rem;
+                            color: $color-1
+                        }
+                    }
+
+                    .estaciones-p{
+                        @extend %parrafos;
+                        line-height: 25px;
+
+                        @include computadora {
+                            font-size: 1.8rem;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .coccion{
+            padding-top: 10px;
+
+            @include computadora {
+                padding: 20px 60px
+            }
+
+            .coccion-tit{
+                @extend %subtitulos;
+                background-color: $color-4;
+                padding: 10px;
+                font-size: 1.85rem;
+
+                @include tablet {
+                    font-size: 2.2rem;
+                }
+
+                @include computadora {
+                    margin: 30px 100px 10px;
+                    padding: 20px;
+                    font-size: 2.4rem;
+                    letter-spacing: 5px;
+                    line-height: 40px;
+                }
+            }
+
+            .coccion-p{
+                @extend %parrafos;
+                line-height: 25px;
+                color: rgb(26, 31, 24);
+
+                @include tablet {
+                    font-size: 1.5rem;
+                }
+
+                @include computadora {
+                    padding: 20px 80px;
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .cambios{
+            background-color: $color-1;
+            margin-top: 25px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 2px 5px 18px $color-2;
+
+            @include computadora {
+                margin: 20px 200px 30px;
+                padding: 50px;
+            }
+
+            .cambios-tit{
+                font-family: $text-2;
+                color: $color-2;
+                text-shadow: 1px 0px 1px $color-4;
+
+                @include computadora {
+                    font-size: 2.2rem;
+                    padding: 0px 100px 10px
+                }
+            }
+
+            .cambios-p{
+                @extend %parrafos;
+                line-height: 25px;
+
+                @include computadora {
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                    line-height: 40px;
                 }
             }
         }
     }
-}
+
+

@@ -9,6 +9,7 @@
         content="milanesas veganas, comida vegana, comida sana, recetas veganas, alternativas vegetarianas, opciones saludables">
     <meta name="description"
         content="Descubre deliciosas milanesas veganas y opciones de comida sana en nuestra página. Encuentra recetas veganas, alternativas vegetarianas y opciones saludables para disfrutar de una alimentación consciente y deliciosa.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -52,7 +53,7 @@
 
     <main class="main-p">
         <section>
-            <article class="sec1-nosotros">
+            <article class="sec1-nosotros text-focus-in">
                 <h2 class="t2">¿Quienes somos?</h2>
                 <img class="img-1 img-fluid rounded-circle" src="../img/jason-briscoe-n4ymhyyFY7A-unsplash.jpg"
                     alt="Nosotros">
@@ -60,23 +61,30 @@
                     comienzos que trajo el Covid, fueron el impulso necesario para animarnos y largarnos. Apoyamos a la
                     pachamama y consumir menos animales es urgente.</p>
                 <p class="p2"> ¿Qué mejor que ayudar a aquellos que esten en el mismo camino?</p>
-                <img class="img-2 img-fluid rounded-circle" src="../img/kevin-mccutcheon-APDMfLHZiRA-unsplash.jpg"
+                <img data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" class="img-2 img-fluid rounded-circle" src="../img/kevin-mccutcheon-APDMfLHZiRA-unsplash.jpg"
                     alt="Cocina casera">
-                <p class="p3">La comida casera y de calidad se siente y hace bien al alma, son mimos que elegimos
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" class="p3">La comida casera y de calidad se siente y hace bien al alma, son mimos que elegimos
                     darnos. ¡¡¡No hay nada peor que buscar un cambio alimenticio y toparte con los "sin sabores" y "duro
                     como una suela"!!!</p>
-                <h2 class="t3">Para eso estamos nosotros, para que encuentres productos caseros, de alta calidad Y RICOS
+                <h2  data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"class="t3">Para eso estamos nosotros, para que encuentres productos caseros, de alta calidad Y RICOS
                     POSTA.</h2>
             </article>
 
             <article class="menoscarne">
-                <h3>¿Por qué consumir menos carne?</h3>
-                <h4>Te dejamos 5 de las razones por las que comer menos carne salva al planeta.</h4>
-                <h4>Además de la mas importante: RESPETAR LA VIDA ANIMAL.</h4>
+                <h3 data-aos="fade-up-left"
+                data-aos-anchor-placement="center-bottom">¿Por qué consumir menos carne?</h3>
+                <h4 data-aos="fade-up-right"
+                data-aos-anchor-placement="center-bottom">Te dejamos 5 de las razones por las que comer menos carne salva al planeta.</h4>
+                <h4 data-aos="fade-up-right"
+                data-aos-anchor-placement="center-bottom">Además de la mas importante: RESPETAR LA VIDA ANIMAL.</h4>
                 <div class="ol-mc">
-                    <img class="img-thumbnail" src="../img/jennifer-schmidt-MRHyv-hHxgk-unsplash (1).jpg" alt="Plato sin carne">
+                    <img data-aos="flip-right" class="img-thumbnail" src="../img/jennifer-schmidt-MRHyv-hHxgk-unsplash (1).jpg" alt="Plato sin carne">
                     <div class="div-ol">
-                        <ol>
+                        <ol data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                             <li>La deforestación para el pastoreo destruye hábitats naturales.
                             </li>
                             <li>Genera más gases de efecto invernadero que todos los transportes juntos.
@@ -92,7 +100,7 @@
                             target="_blank">Mas info</a>
                     </div>
                 </div>
-                <div class="vid-mc">
+                <div data-aos="flip-left" class="vid-mc">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/plQVuTc-T7k"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -101,7 +109,8 @@
             </article>
         </section>
 
-        <section class="sec2-n">
+        <section data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="sec2-n">
             <article class="flex-n">
                 <h3 class="n-tit">NUESTRO (NO) SECRETO</h3>
                 <p class="n-p">Tenemos la posta para que no puedas creer el sabor de nuestros medallones. Existe un tips
@@ -154,6 +163,11 @@
         </section>
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
