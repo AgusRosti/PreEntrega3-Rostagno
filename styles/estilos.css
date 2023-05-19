@@ -33,7 +33,7 @@
   color: #37401b;
 }
 
-.content-form .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p {
+.content-form .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .foot-flex .foot-bloq .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -670,43 +670,119 @@
   background-color: #37401b;
   text-align: center;
 }
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 40px 80px 10px;
+  }
+}
 .footer .foot-text {
+  line-height: 20px;
+  padding: 25px 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  .footer .foot-text {
+    padding: 20px 90px;
+  }
+}
+.footer .foot-text .foot-1 {
+  text-shadow: 0px 0px 2px #E4FF8E;
+}
+@media screen and (min-width: 570px) {
+  .footer .foot-text .foot-1 {
+    font-size: 2.2rem;
+    padding-inline: 80px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 570px) {
+  .footer .foot-text .foot-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 570px) and (min-width: 992px) {
+  .footer .foot-text .foot-flex {
+    justify-content: space-between;
+  }
+}
+.footer .foot-text .foot-flex .foot-bloq {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 20px;
-  padding: 20px 10px;
-  font-size: 1.3rem;
-  color: white;
 }
-.footer .foot-text .foot-1 {
-  text-shadow: 1px 0px 50px #E4FF8E;
+@media screen and (min-width: 570px) {
+  .footer .foot-text .foot-flex .foot-bloq {
+    width: 50%;
+  }
 }
-.footer .foot-text .foot-2 {
+.footer .foot-text .foot-flex .foot-bloq .foot-2 {
   font-family: "Amatic SC", cursive;
   font-size: 1.3rem;
   font-weight: bolder;
   color: #E4FF8E;
   letter-spacing: 3px;
 }
-.footer .foot-text a {
+@media screen and (min-width: 570px) {
+  .footer .foot-text .foot-flex .foot-bloq .foot-2 {
+    font-size: 1.5rem;
+    padding: 30px 10px 5px;
+  }
+}
+.footer .foot-text .foot-flex .foot-bloq a {
   color: #B6D456;
   padding: 5px 0px;
   line-height: 25px;
   font-size: 1.2rem;
 }
-.footer .foot-text img {
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-flex .foot-bloq a {
+    font-size: 1.5rem;
+    padding-block: 10px;
+  }
+}
+.footer .foot-text .foot-flex .foot-bloq img {
   height: 80px;
   margin-block: 20px;
 }
-.footer .foot-text .redes {
+@media screen and (min-width: 570px) {
+  .footer .foot-text .foot-flex .foot-bloq img {
+    height: 100px;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-flex .foot-bloq img {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 570px) {
+  .footer .foot-text .foot-flex .foot-bloq .form-parr {
+    margin-top: 10px;
+    padding-inline: 30px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-flex .foot-bloq .form-parr {
+    padding-inline: 100px;
+    line-height: 30px;
+  }
+}
+.footer .foot-text .foot-flex .foot-bloq .redes {
   margin-top: 20px;
 }
-.footer .foot-text .form-control {
+.footer .foot-text .foot-flex .foot-bloq .form-control {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.footer .foot-text .btn {
+.footer .foot-text .foot-flex .foot-bloq .btn {
   color: #37401b;
   background-color: #E4FA9D;
   padding: 2px 25px;
@@ -714,13 +790,38 @@
   cursor: pointer;
   box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.footer .foot-text .iconos {
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-flex .foot-bloq .btn {
+    font-size: 1.8rem;
+    padding: 2px 45px;
+  }
+  .footer .foot-text .foot-flex .foot-bloq .btn:hover {
+    color: #37401b;
+    background-color: #B6D456;
+    box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 1.5seg;
+  }
+}
+.footer .foot-text .foot-flex .foot-bloq .iconos {
   display: flex;
   gap: 20px;
 }
-.footer .foot-text .iconos i {
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-flex .foot-bloq .iconos {
+    gap: 40px;
+  }
+}
+.footer .foot-text .foot-flex .foot-bloq .iconos i {
   color: white;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .footer .foot-text .foot-flex .foot-bloq .iconos i {
+    font-size: 1.8rem;
+  }
+  .footer .foot-text .foot-flex .foot-bloq .iconos i:hover {
+    color: #B6D456;
+  }
 }
 
 .main-p .sec1-send {
