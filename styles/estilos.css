@@ -10,7 +10,7 @@
   font-size: 1.5rem;
 }
 
-.tips-sec .tips-h2 h2, .tips-recetas .coccion .coccion-tit, .tips-recetas .estacion .est-tit, .main-p .sec-r article .r-t, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .pedidos-card .card .card-body .card-title, .main1 .sec3 h3, .main1 .sec2 .sec-cont2 .cont2-t {
+.tips-recetas .coccion .coccion-tit, .tips-recetas .estacion .est-tit, .main-p .sec-r article .r-t, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .tips-sec .tips-h2 h2, .main-p .productos .card-prod .titulo-card-prod, .main1 .sec3 h3, .main1 .sec2 .sec-cont2 .cont2-t {
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
   color: #B6D456;
@@ -19,7 +19,8 @@
   line-height: 30px;
 }
 
-.tips-sec .tips-list, .formularios p, .tips-recetas .cambios .cambios-p, .tips-recetas .coccion .coccion-p, .tips-recetas .estacion .frutas-verduras .estaciones .estaciones-p, .tips-recetas .estacion .est-p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .pedidos-card .card .card-body p, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .prod .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
+.formularios p, .tips-recetas .cambios .cambios-p, .tips-recetas .coccion .coccion-p, .tips-recetas .estacion .frutas-verduras .estaciones .estaciones-p, .tips-recetas .estacion .est-p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .tips-sec .tips-list, .main-p .productos .card-prod .precio-card-prod,
+.main-p .productos .card-prod .subtitulo-card-prod, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .prod .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
@@ -33,7 +34,7 @@
   color: #37401b;
 }
 
-.content-form .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .pedidos-card .card .card-body .btn, .footer .foot-text .foot-flex .foot-bloq .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p {
+.content-form .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .productos .card-prod .boton-card-prod, .footer .foot-text .foot-flex .foot-bloq .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -49,7 +50,7 @@
   box-shadow: rgba(128, 252, 117, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.content-form .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .pedidos-card .card .card-body .btn:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .prod .sec3-p:visited {
+.content-form .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .productos .card-prod .boton-card-prod:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .prod .sec3-p:visited {
   color: #37401b;
   background-color: #E4FA9D;
   box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -618,6 +619,9 @@
     padding-inline: 15px;
   }
 }
+.main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b {
+  transition: all 1.5seg;
+}
 @media screen and (min-width: 570px) {
   .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b {
     font-size: 1.4rem;
@@ -633,7 +637,7 @@
     color: #37401b;
     background-color: #E4FA9D;
     box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    transition: 1.5seg;
+    transition: all 1.5seg;
   }
 }
 
@@ -647,6 +651,7 @@
   bottom: 10px;
   right: 15px;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 @media screen and (min-width: 992px) {
   .btn-wsp {
@@ -655,14 +660,25 @@
     bottom: 30px;
     right: 30px;
   }
+  .btn-wsp:hover {
+    background-color: white;
+    transition: all 1s ease-in-out;
+    transform: scale(1.2);
+  }
 }
 .btn-wsp .bi-whatsapp {
   font-size: 30px;
   color: white;
+  transition: all 1s ease-in-out;
 }
 @media screen and (min-width: 992px) {
   .btn-wsp .bi-whatsapp {
     font-size: 36px;
+  }
+  .btn-wsp .bi-whatsapp:hover {
+    color: #00bb2d;
+    transition: all 1s ease-in-out;
+    transform: scale(1.2);
   }
 }
 
@@ -888,97 +904,116 @@
     color: rgb(9, 9, 201);
   }
 }
-.main-p .pedidos-card {
-  margin: 30px;
-}
-@media screen and (min-width: 992px) {
-  .main-p .pedidos-card {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-}
-.main-p .pedidos-card .card {
+.main-p .info-section {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  background-color: #E4FA9D;
-  padding: 10px;
-  margin: 15px;
-  border: 1px solid grey;
-  overflow: hidden;
-}
-@media screen and (min-width: 570px) {
-  .main-p .pedidos-card .card {
-    flex-direction: row;
-  }
+  line-height: 30px;
+  gap: 30px;
 }
 @media screen and (min-width: 992px) {
-  .main-p .pedidos-card .card {
-    display: inline-block;
-    max-width: 350px;
+  .main-p .info-section {
+    padding: 20px;
+    background-color: #E4FF8E;
+    border: 1px solid grey;
+    border-radius: 30px;
   }
-}
-.main-p .pedidos-card .card .card-img-top {
-  width: 200px;
-  height: 150px;
-  border: 3px solid #E4FF8E;
-  border: 1px solid grey;
-}
-@media screen and (min-width: 992px) {
-  .main-p .pedidos-card .card .card-img-top {
-    display: inline-block;
-    min-width: 200px;
-    width: 300px;
-    height: 230px;
-  }
-}
-.main-p .pedidos-card .card .card-body {
-  line-height: 5px;
-  color: #37401b;
-}
-.main-p .pedidos-card .card .card-body .card-title {
-  color: #37401b;
-  letter-spacing: 1px;
-  font-size: 2.2rem;
-}
-@media screen and (min-width: 992px) {
-  .main-p .pedidos-card .card .card-body .card-title {
-    font-size: 2.5rem;
-  }
-}
-.main-p .pedidos-card .card .card-body .btn {
-  padding: 2px 15px;
-  letter-spacing: 0.5px;
-}
-@media screen and (min-width: 992px) {
-  .main-p .pedidos-card .card .card-body .btn {
-    font-size: 1.8rem;
-    padding: 2px 45px;
-  }
-  .main-p .pedidos-card .card .card-body .btn:hover {
-    color: #37401b;
-    background-color: #B6D456;
-    box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    transition: 1.5seg;
-  }
-}
-.main-p .info-section {
-  text-align: center;
 }
 .main-p .info-section p {
   font-family: "Amatic SC", cursive;
   font-size: 1.7rem;
   line-height: 25px;
   padding: 0px 25px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 992px) {
   .main-p .info-section p {
     font-size: 2.5rem;
-    color: #E4FF8E;
+    color: #37401b;
+  }
+}
+.main-p .productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .main-p .productos {
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+  }
+}
+.main-p .productos .card-prod {
+  background-color: #E4FF8E;
+  padding: 10px;
+  width: 300px;
+  height: 430px;
+  border: 2px solid #B6D456;
+  border-radius: 10px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .productos .card-prod {
+    width: 400px;
+    height: 550px;
+  }
+}
+.main-p .productos .card-prod .avena {
+  background-image: url(../img/garbanzoYavena.jpg);
+}
+.main-p .productos .card-prod .calabaza {
+  background-image: url(../img/lentejaYcalabaza.jpg);
+}
+.main-p .productos .card-prod .yamani {
+  background-image: url(../img/adukiYyamani.jpg);
+}
+.main-p .productos .card-prod .img-card {
+  height: 200px;
+  padding-top: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #B6D456;
+  border-radius: 10px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .productos .card-prod .img-card {
+    height: 300px;
+  }
+}
+.main-p .productos .card-prod .titulo-card-prod {
+  padding-top: 10px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .productos .card-prod .titulo-card-prod {
+    padding-top: 20px;
+    font-size: 2.5rem;
+  }
+}
+.main-p .productos .card-prod .boton-card-prod {
+  transition: all 1.5seg;
+}
+@media screen and (min-width: 570px) {
+  .main-p .productos .card-prod .boton-card-prod {
+    font-size: 1.5rem;
+    padding: 5px 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .productos .card-prod .boton-card-prod {
+    font-size: 1.5rem;
+    padding: 5px 35px;
+  }
+  .main-p .productos .card-prod .boton-card-prod:hover {
+    color: #37401b;
+    background-color: #E4FA9D;
+    box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 1.5seg;
   }
 }
 .main-p .text-focus-in {
@@ -992,6 +1027,83 @@
   100% {
     filter: blur(0);
     opacity: 1;
+  }
+}
+.main-p .tips-sec {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-p .tips-sec .tips-h2 {
+  text-align: center;
+  padding-inline: 15px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .tips-sec .tips-h2 {
+    padding-inline: 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .tips-sec .tips-h2 {
+    padding: 50px 150px 10px;
+  }
+}
+.main-p .tips-sec .tips-h2 h2 {
+  font-size: 2rem;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .tips-sec .tips-h2 h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+    line-height: 37px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .tips-sec .tips-h2 h2 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    line-height: 50px;
+  }
+}
+.main-p .tips-sec .tips-list {
+  color: rgb(26, 31, 24);
+  text-align: justify;
+  padding: 10px 35px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .tips-sec .tips-list {
+    font-size: 1.7rem;
+    padding: 10px 65px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .tips-sec .tips-list {
+    font-size: 2rem;
+    padding-inline: 100px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .tips-sec .tips-list .ol {
+    padding-inline: 20px;
+  }
+}
+.main-p .tips-sec .tips-list .ol .li {
+  padding-block: 10px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .tips-sec .tips-list .ol .li {
+    padding-block: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .tips-sec .tips-list .ol .li {
+    padding-block: 20px;
   }
 }
 
@@ -1812,100 +1924,5 @@
     background-color: #B6D456;
     box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transition: 1.5seg;
-  }
-}
-
-.tips-sec {
-  padding: 10px;
-}
-.tips-sec .tips-h2 {
-  text-align: center;
-  padding-inline: 5px;
-}
-@media screen and (min-width: 570px) {
-  .tips-sec .tips-h2 {
-    padding-inline: 25px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-sec .tips-h2 {
-    padding: 20px 50px;
-  }
-}
-.tips-sec .tips-h2 h2 {
-  font-size: 2rem;
-  line-height: 30px;
-  letter-spacing: 2px;
-}
-@media screen and (min-width: 570px) {
-  .tips-sec .tips-h2 h2 {
-    font-size: 2.5rem;
-    letter-spacing: 2.5px;
-    line-height: 37px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-sec .tips-h2 h2 {
-    font-size: 4rem;
-    letter-spacing: 3.5px;
-    line-height: 60px;
-  }
-}
-.tips-sec .tips-list {
-  text-align: justify;
-  padding: 25px;
-}
-@media screen and (min-width: 570px) {
-  .tips-sec .tips-list {
-    font-size: 1.7rem;
-    padding: 45px;
-    line-height: 30px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-sec .tips-list {
-    font-size: 2rem;
-    padding-inline: 100px;
-    line-height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-sec .tips-list .ol {
-    padding-inline: 20px;
-  }
-}
-.tips-sec .tips-list .ol .li {
-  padding-block: 10px;
-}
-@media screen and (min-width: 570px) {
-  .tips-sec .tips-list .ol .li {
-    padding-block: 18px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-sec .tips-list .ol .li {
-    padding-block: 20px;
-  }
-}
-.tips-sec .video {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (min-width: 570px) {
-  .tips-sec .video iframe {
-    width: 400px;
-    height: 250px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-sec .video iframe {
-    width: 550px;
-    height: 450px;
-    border: 2px solid #B6D456;
-    padding: 15px;
-    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */

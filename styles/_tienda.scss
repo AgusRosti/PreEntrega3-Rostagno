@@ -1,6 +1,6 @@
-.main-p{
+.main-p {
 
-    .sec1-send{
+    .sec1-send {
         text-align: center;
         padding: 15px;
 
@@ -11,7 +11,7 @@
         .send-content {
             @include flex (flex, column, center, center);
 
-            .send-cuestion{
+            .send-cuestion {
                 @extend %titulos;
                 color: $color-1;
                 text-shadow: 0px 0px 2px black;
@@ -24,9 +24,9 @@
                 }
             }
 
-            .send-parrafo{
+            .send-parrafo {
                 @extend %parrafos;
-                font-size: 1.2rem ;
+                font-size: 1.2rem;
 
                 @include computadora {
                     font-size: 1.6rem;
@@ -34,39 +34,39 @@
                 }
             }
 
-            .nav-mapa{
-                
-                ul{
-                    
-                    li{
+            .nav-mapa {
+
+                ul {
+
+                    li {
                         text-align: start;
                         @extend %cursiva;
                         font-size: 1.1rem;
                         line-height: 40px;
 
-                        @include tablet{
+                        @include tablet {
                             text-align: center;
                         }
 
                         @include computadora {
                             font-size: 1.8rem;
                             margin-top: 30px;
-                            
+
                         }
 
-                        a{
+                        a {
                             text-decoration: underline;
                             color: $color-4;
                             font-weight: bold;
                             text-shadow: 1px 0px 1px $color-1;
                             cursor: pointer;
 
-                            &:visited{
+                            &:visited {
                                 @extend %animacion-b;
                             }
 
                             @include computadora {
-                                &:hover{
+                                &:hover {
                                     color: rgb(9, 9, 201);
                                 }
                             }
@@ -77,109 +77,214 @@
         }
     }
 
-    .pedidos-card{
-        margin: 30px ;
+    .info-section {
+        text-align: center;
+        @include flex (flex, column, center, center);
+        line-height: 30px;
+        gap: 30px;
 
         @include computadora {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            text-align: center;
-        }
-        
-        .card{
-            @include flex (flex, column, center, center);
-            flex: 1;
-            background-color: $color-3;
-            padding: 10px;
-            margin: 15px;
+            padding: 20px;
+            background-color: $color-2;
             border: 1px solid grey;
-            overflow: hidden;
-
-            @include tablet {
-                flex-direction: row;
-            }
-
-            @include computadora {
-                display:inline-block;
-                max-width: 350px;
-            }
-
-
-            .card-img-top{
-                width: 200px;
-                height: 150px;
-                border: 3px solid $color-2;
-                border: 1px solid grey;
-
-                @include computadora {
-                    display:inline-block;
-                    min-width: 200px;
-                    width: 300px;
-                    height: 230px;
-                }
-            }
-            
-            .card-body{
-                line-height: 5px;
-                color: $color-4;
-
-                .card-title{
-                    @extend %subtitulos;
-                    color: $color-4;
-                    letter-spacing: 1px;
-                    font-size: 2.2rem;
-
-                    @include computadora {
-                        font-size: 2.5rem
-                    }
-                }
-
-                p{
-                    @extend %parrafos;
-                }
-
-                .btn{
-                    @extend %botones;
-                    padding: 2px 15px;
-                    letter-spacing: .5px;
-
-                    &:visited{
-                        @extend %animacion-b;
-                    }
-
-                    @include computadora {
-                        font-size: 1.8rem;
-                        padding: 2px 45px;
-        
-                        &:hover{
-                            color: $color-4;
-                            background-color: $color-1;
-                            box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-                            transition: 1.5seg;
-                        }
-                    }
-                }
-            }
+            border-radius: 30px;
         }
-    }
 
-    .info-section{
-        text-align: center;
-        
-        p{
+        p {
             font-family: $text-4;
             font-size: 1.7rem;
             line-height: 25px;
             padding: 0px 25px;
+            margin-bottom: 0;
 
             @include computadora {
                 font-size: 2.5rem;
-                color: $color-2;
+                color: $color-4;
             }
         }
     }
 
-    .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
-    @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+    .productos {
+        @include flex (flex, column, center, center);
+        gap: 10px;
+        margin-top: 20px;
+        text-align: center;
+
+        @include computadora {
+            flex-direction:row;
+            gap: 30px;
+            margin-top: 40px
+        }
+
+        .card-prod {
+            background-color: $color-2;
+            padding: 10px;
+            width: 300px;
+            height: 430px;
+            border: 2px solid $color-1;
+            border-radius: 10px;
+
+            @include computadora {
+                width: 400px;
+                height: 550px;
+            }
+
+            .avena{
+                background-image: url(../img/garbanzoYavena.jpg);
+            }
+            .calabaza{
+                background-image: url(../img/lentejaYcalabaza.jpg);
+            }
+            .yamani{
+                background-image: url(../img/adukiYyamani.jpg);
+            }
+            .img-card{
+                height: 200px;
+                padding-top: 10px;
+                background-size: cover;
+                background-position: center;
+                border: 2px solid $color-1;
+                border-radius: 10px;
+
+                @include computadora {
+                    height: 300px;
+                }
+            }
+
+            .titulo-card-prod {
+                @extend %subtitulos;
+                padding-top: 10px;
+
+                @include computadora {
+                    padding-top: 20px;
+                    font-size: 2.5rem
+                }
+            }
+
+            .precio-card-prod,
+            .subtitulo-card-prod {
+                @extend %parrafos;
+            }
+
+            .boton-card-prod {
+                @extend %botones;
+                transition: all 1.5seg;
+
+                &:visited {
+                    @extend %animacion-b;
+                }
+
+                @include tablet {
+                    font-size: 1.5rem;
+                    padding: 5px 25px;
+                }
+
+                @include computadora {
+                    font-size: 1.5rem;
+                    padding: 5px 35px;
+
+                    &:hover {
+                        color: $color-4;
+                        background-color: $color-3;
+                        box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                        transition: all 1.5seg;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .text-focus-in {
+        animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both
+    }
+
+    @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0
+        }
+
+        100% {
+            filter: blur(0);
+            opacity: 1
+        }
+    }
+
+    .tips-sec {
+        padding: 40px 10px;
+        @include flex (flex, column, center, center);
+
+
+        .tips-h2 {
+            text-align: center;
+            padding-inline: 15px;
+
+            @include tablet {
+                padding-inline: 25px;
+            }
+
+            @include computadora {
+                padding: 50px 150px 10px;
+            }
+
+            h2 {
+                @extend %subtitulos;
+                font-size: 2rem;
+                line-height: 30px;
+                letter-spacing: 2px;
+
+                @include tablet {
+                    font-size: 2.5rem;
+                    letter-spacing: 2.5px;
+                    line-height: 37px;
+                }
+
+                @include computadora {
+                    font-size: 3.5rem;
+                    letter-spacing: 3px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+        .tips-list {
+            @extend %parrafos;
+            color: rgb(26, 31, 24);
+            text-align: justify;
+            padding: 10px 35px;
+
+            @include tablet {
+                font-size: 1.7rem;
+                padding: 10px 65px;
+                line-height: 30px;
+            }
+
+            @include computadora {
+                font-size: 2rem;
+                padding-inline: 100px;
+                line-height: 30px;
+            }
+
+            .ol {
+                @include computadora {
+                    padding-inline: 20px;
+                }
+
+
+                .li {
+                    padding-block: 10px;
+
+                    @include tablet {
+                        padding-block: 18px;
+                    }
+
+                    @include computadora {
+                        padding-block: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
