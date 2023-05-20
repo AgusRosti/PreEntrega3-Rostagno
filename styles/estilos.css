@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
-.formularios h2, .tips-recetas .estacion .frutas-verduras .estaciones .estaciones-t, .tips-recetas .sec-tips-r .h2-tips-r, .main-p .sec-r article .card-recetas .card-title, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .main1 .sec4 .sec4-cont .sec4-texto .sec4-t, .main1 .sec3 .sec-cont3 .cont3-t,
+.formularios h2, .main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones .estaciones-t, .main-p .recetas-tips .sec-tips-r .recetas-tit, .main-p .recetas .recetas-text .recetas-card .card a div h2, .main-p .recetas .recetas-text .recetas-tit, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .main1 .sec4 .sec4-cont .sec4-texto .sec4-t, .main1 .sec3 .sec-cont3 .cont3-t,
 .main1 .sec3 .sec-cont3 .tit-prod {
   text-align: center;
   padding-bottom: 10px;
@@ -10,7 +10,7 @@
   font-size: 1.5rem;
 }
 
-.tips-recetas .coccion .coccion-tit, .tips-recetas .estacion .est-tit, .main-p .sec-r article .r-t, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .tips-sec .tips-h2 h2, .main-p .productos .card-prod .titulo-card-prod, .main1 .sec3 h3, .main1 .sec2 .sec-cont2 .cont2-t {
+.main-p .recetas-tips .cambios .recetas-sub, .main-p .recetas-tips .sec-tips-r .recetas-sub, .main-p .menoscarne h4, .main-p section .sec1-nosotros .t3, .main-p .tips-sec .tips-h2 h2, .main-p .productos .card-prod .titulo-card-prod, .main1 .sec3 h3, .main1 .sec2 .sec-cont2 .cont2-t {
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
   color: #B6D456;
@@ -19,7 +19,7 @@
   line-height: 30px;
 }
 
-.formularios p, .tips-recetas .cambios .cambios-p, .tips-recetas .coccion .coccion-p, .tips-recetas .estacion .frutas-verduras .estaciones .estaciones-p, .tips-recetas .estacion .est-p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .tips-sec .tips-list, .main-p .productos .card-prod .precio-card-prod,
+.formularios p, .main-p .recetas-tips .cambios .parrafo2, .main-p .recetas-tips, .main-p .recetas .recetas-text .recetas-p, .main-p .sec2-n .n-p, .main-p .menoscarne div .div-ol ol, .main-p section .sec1-nosotros p, .main-p .tips-sec .tips-list, .main-p .productos .card-prod .precio-card-prod,
 .main-p .productos .card-prod .subtitulo-card-prod, .main-p .sec1-send .send-content .send-parrafo, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-pp, .main1 .sec4 .sec4-tit p, .main1 .sec3 .prod .sec-productos div h3, .main1 .sec2 .sec-cont2 .cont2-p {
   line-height: 20px;
   font-size: 1.3rem;
@@ -27,7 +27,7 @@
   color: #37401b;
 }
 
-.formularios nav a, .main-p .sec-r article p, .main-p .sec1-send .send-content .nav-mapa ul li, .main1 .sec4 .sec4-tit .h4-2, .main1 .sec3 .prod .sec-productos div p, .main1 .sec2 .sec-cont2 .cont2-p2 {
+.formularios nav a, .main-p .sec1-send .send-content .nav-mapa ul li, .main1 .sec4 .sec4-tit .h4-2, .main1 .sec3 .prod .sec-productos div p, .main1 .sec2 .sec-cont2 .cont2-p2 {
   line-height: 15px;
   font-size: 1.4rem;
   font-style: italic;
@@ -58,6 +58,8 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
   background-color: #44521d;
   font-size: 1.35rem;
   line-height: 20px;
@@ -83,6 +85,22 @@
   font-size: 1.5rem;
 }
 
+.navbar-collapse {
+  justify-self: end;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #E4FF8E !important;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  transition: all 1s;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  padding-bottom: 15px;
+  border-bottom: 2px solid #E4FF8E;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +117,7 @@
 .main1 .sec1 {
   height: 100vh;
   position: relative;
-  background-color: #E4FF8E;
+  background-color: #44521d;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -112,48 +130,41 @@
   }
 }
 .main1 .sec1 .sec-cont1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-block-size: 360px;
   z-index: 3;
 }
 .main1 .sec1 .sec-cont1 .sec-s1 {
   letter-spacing: 1.8px;
-  font-size: 2.2rem;
-  color: #B6D456;
+  font-size: 3rem;
+  color: #E4FF8E;
   font-family: "Luckiest Guy", cursive;
-  text-shadow: 5px 10px 20px #37401b;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec1 .sec-cont1 .sec-s1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     letter-spacing: 2.5px;
   }
 }
 @media screen and (min-width: 992px) {
   .main1 .sec1 .sec-cont1 .sec-s1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     letter-spacing: 3.5px;
   }
 }
 .main1 .sec1 .sec-cont1 .sec-s2 {
   letter-spacing: 10px;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 4.2rem;
+  font-size: 7.5rem;
   color: #E4FF8E;
-  text-shadow: 5px 10px 20px #37401b;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec1 .sec-cont1 .sec-s2 {
-    font-size: 5.5rem;
-    letter-spacing: 10px;
+    font-size: 8rem;
+    letter-spacing: 15px;
   }
 }
 @media screen and (min-width: 992px) {
   .main1 .sec1 .sec-cont1 .sec-s2 {
-    font-size: 6.5rem;
+    font-size: 9.5rem;
     letter-spacing: 25px;
   }
 }
@@ -910,7 +921,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 30px;
   gap: 30px;
 }
 @media screen and (min-width: 992px) {
@@ -924,7 +934,7 @@
 .main-p .info-section p {
   font-family: "Amatic SC", cursive;
   font-size: 1.7rem;
-  line-height: 25px;
+  line-height: 40px;
   padding: 0px 25px;
   margin-bottom: 0;
 }
@@ -958,10 +968,20 @@
   border: 2px solid #B6D456;
   border-radius: 10px;
 }
+@media screen and (min-width: 570px) {
+  .main-p .productos .card-prod {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .main-p .productos .card-prod {
+    display: inline-block;
     width: 400px;
-    height: 550px;
+    height: 570px;
   }
 }
 .main-p .productos .card-prod .avena {
@@ -981,8 +1001,14 @@
   border: 2px solid #B6D456;
   border-radius: 10px;
 }
+@media screen and (min-width: 570px) {
+  .main-p .productos .card-prod .img-card {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 992px) {
   .main-p .productos .card-prod .img-card {
+    width: 100%;
     height: 300px;
   }
 }
@@ -992,7 +1018,8 @@
 @media screen and (min-width: 992px) {
   .main-p .productos .card-prod .titulo-card-prod {
     padding-top: 20px;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    line-height: 45px;
   }
 }
 .main-p .productos .card-prod .boton-card-prod {
@@ -1476,16 +1503,103 @@
   }
 }
 
-.main-p {
-  padding: 20px 10px;
-}
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 570px) {
   .main-p {
-    padding: 30px 100px;
+    padding-inline: 25px;
   }
 }
-.main-p .sec-r .text-focus-in {
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+.main-p .recetas {
+  padding-inline: 10px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas {
+    padding: 50px 100px;
+  }
+}
+.main-p .recetas .recetas-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+.main-p .recetas .recetas-text .recetas-tit {
+  text-shadow: 0.5px 0px 0.5px #37401b;
+  color: #B6D456;
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas .recetas-text .recetas-tit {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas .recetas-text .recetas-tit {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas .recetas-text .recetas-p {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-inline: 150px;
+    line-height: 40px;
+  }
+}
+.main-p .recetas .recetas-text .recetas-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas .recetas-text .recetas-card {
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas .recetas-text .recetas-card {
+    gap: 60px;
+    margin-top: 35px;
+  }
+}
+.main-p .recetas .recetas-text .recetas-card .card {
+  border: 2px solid #B6D456;
+  transition: all 1s;
+}
+.main-p .recetas .recetas-text .recetas-card .card:hover {
+  transform: scaleY(1.1);
+  transition: all 1s;
+}
+.main-p .recetas .recetas-text .recetas-card .card img {
+  height: 300px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas .recetas-text .recetas-card .card img {
+    height: 450px;
+  }
+}
+.main-p .recetas .recetas-text .recetas-card .card a div h2 {
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas .recetas-text .recetas-card .card a div h2 {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas .recetas-text .recetas-card .card a div h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+}
+.main-p .recetas .text-focus-in {
+  animation: text-focus-in 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 @keyframes text-focus-in {
   0% {
@@ -1497,282 +1611,179 @@
     opacity: 1;
   }
 }
-.main-p .sec-r article {
-  padding-bottom: 80px;
-}
-.main-p .sec-r article .r-t {
-  font-size: 2.5rem;
-  text-shadow: 1px 0px 3px #B6D456;
-  text-align: center;
-  line-height: 40px;
-  padding: 0px 10px 20px;
-}
-@media screen and (min-width: 570px) {
-  .main-p .sec-r article .r-t {
-    font-size: 3.5rem;
-    padding: 15px;
-    line-height: 45px;
-    color: #37401b;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main-p .sec-r article .r-t {
-    padding: 30px;
-  }
-}
-.main-p .sec-r article p {
-  text-align: center;
-  font-size: 1.2rem;
-}
-@media screen and (min-width: 992px) {
-  .main-p .sec-r article p {
-    font-size: 1.5rem;
-    padding: 30px;
-  }
-}
-.main-p .sec-r article .card-recetas {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 8px;
-}
-.main-p .sec-r article .card-recetas .card {
-  text-align: center;
-  transition: all 1s;
-}
-@media screen and (min-width: 992px) {
-  .main-p .sec-r article .card-recetas .card:hover {
-    transition: all 1s;
-    transform: scale(1.05);
-  }
-}
-.main-p .sec-r article .card-recetas .card img {
-  width: 128px;
-  height: 150px;
-}
-@media screen and (min-width: 570px) {
-  .main-p .sec-r article .card-recetas .card img {
-    width: 200px;
-    height: 250px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main-p .sec-r article .card-recetas .card img {
-    width: 350px;
-    height: 450px;
-    border: 2px solid #B6D456;
-    transition: all 1s;
-  }
-}
-.main-p .sec-r article .card-recetas .card-title {
-  letter-spacing: 1.3px;
-  font-size: 1.25rem;
-}
-@media screen and (min-width: 570px) {
-  .main-p .sec-r article .card-recetas .card-title {
-    font-size: 2rem;
-    letter-spacing: 2.5px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main-p .sec-r article .card-recetas .card-title {
-    font-size: 2.5rem;
-    letter-spacing: 3.5px;
-  }
-}
-
-.tips-recetas {
-  padding-inline: 15px;
-  text-align: center;
-}
-@media screen and (min-width: 570px) {
-  .tips-recetas {
-    padding-inline: 30px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas {
-    padding-inline: 20px;
-  }
-}
-.tips-recetas .sec-tips-r {
-  padding-block: 10px;
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .sec-tips-r {
-    padding-top: 30px;
-  }
-}
-.tips-recetas .sec-tips-r .h2-tips-r {
-  color: #B6D456;
-  text-shadow: 1px 2px 2px #37401b;
-  font-size: 1.8rem;
-}
-@media screen and (min-width: 570px) {
-  .tips-recetas .sec-tips-r .h2-tips-r {
-    font-size: 2.1rem;
-    padding-inline: 80px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .sec-tips-r .h2-tips-r {
-    color: #37401b;
-    font-size: 3rem;
-    padding-inline: 80px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .estacion {
-    padding: 20px 60px;
-  }
-}
-.tips-recetas .estacion .est-tit {
-  background-color: #37401b;
-  padding: 10px;
-  font-size: 1.85rem;
-}
-@media screen and (min-width: 570px) {
-  .tips-recetas .estacion .est-tit {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .estacion .est-tit {
-    margin-inline: 100px;
-    padding: 20px;
-    font-size: 2.2rem;
-    letter-spacing: 5px;
-    line-height: 40px;
-  }
-}
-.tips-recetas .estacion .est-p {
-  line-height: 25px;
-}
-@media screen and (min-width: 570px) {
-  .tips-recetas .estacion .est-p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .estacion .est-p {
-    padding: 20px 80px;
-    font-size: 2rem;
-    letter-spacing: 3px;
-    line-height: 40px;
-  }
-}
-.tips-recetas .estacion .frutas-verduras {
+.main-p .recetas-tips {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding: 50px 10px 20px;
+  text-align: center;
+  color: rgb(18, 29, 8);
 }
-@media screen and (min-width: 992px) {
-  .tips-recetas .estacion .frutas-verduras {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 30px;
-    margin-top: 30px;
-    border: 4px solid #B6D456;
-    padding: 30px;
-    background-color: #E4FA9D;
+@media screen and (min-width: 570px) {
+  .main-p .recetas-tips {
+    padding: 50px 20px 20px;
   }
 }
 @media screen and (min-width: 992px) {
-  .tips-recetas .estacion .frutas-verduras .estaciones {
-    width: 300px;
+  .main-p .recetas-tips {
+    padding: 50px 100px 20px;
   }
 }
-@media screen and (min-width: 992px) {
-  .tips-recetas .estacion .frutas-verduras .estaciones .estaciones-t {
+.main-p .recetas-tips .sec-tips-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.main-p .recetas-tips .sec-tips-r .recetas-tit {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas-tips .sec-tips-r .recetas-tit {
     font-size: 2rem;
-    color: #B6D456;
   }
 }
-.tips-recetas .estacion .frutas-verduras .estaciones .estaciones-p {
-  line-height: 25px;
+@media screen and (min-width: 992px) {
+  .main-p .recetas-tips .sec-tips-r .recetas-tit {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+}
+.main-p .recetas-tips .sec-tips-r .recetas-sub {
+  font-size: 1.6rem;
+  background-color: #37401b;
+  padding: 10px;
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas-tips .sec-tips-r .recetas-sub {
+    font-size: 2rem;
+    padding: 15px;
+  }
 }
 @media screen and (min-width: 992px) {
-  .tips-recetas .estacion .frutas-verduras .estaciones .estaciones-p {
-    font-size: 1.8rem;
+  .main-p .recetas-tips .sec-tips-r .recetas-sub {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas-tips .sec-tips-r .parrafo {
+    font-size: 1.5rem;
     line-height: 30px;
   }
 }
-.tips-recetas .coccion {
-  padding-top: 10px;
-}
 @media screen and (min-width: 992px) {
-  .tips-recetas .coccion {
-    padding: 20px 60px;
+  .main-p .recetas-tips .sec-tips-r .parrafo {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-inline: 50px;
+    line-height: 40px;
   }
 }
-.tips-recetas .coccion .coccion-tit {
-  background-color: #37401b;
-  padding: 10px;
-  font-size: 1.85rem;
+.main-p .recetas-tips .sec-tips-r .frutas-verduras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-image: url(../img/plantas.jpg);
+  background-size: cover;
+  padding: 15px 10px;
+  border: 2px solid #B6D456;
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas-tips .sec-tips-r .frutas-verduras {
+    flex-direction: row;
+    align-items: start;
+    padding: 30px;
+  }
+}
+.main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones {
+  background-color: #E4FF8E;
+  border: 2px solid #B6D456;
+  padding: 5px;
 }
 @media screen and (min-width: 570px) {
-  .tips-recetas .coccion .coccion-tit {
+  .main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones {
+    flex-direction: column;
+    gap: 0px;
+    width: 400px;
+    padding: 20px 5px;
+    text-align: center;
+  }
+}
+.main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones .estaciones-t {
+  color: #37401b;
+  text-shadow: none;
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones .estaciones-t {
     font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .tips-recetas .coccion .coccion-tit {
-    margin: 30px 100px 10px;
+  .main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones .estaciones-p {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-inline: 50px;
+    line-height: 40px;
+  }
+}
+.main-p .recetas-tips .cambios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #E4FF8E;
+  padding: 20px 10px;
+}
+@media screen and (min-width: 992px) {
+  .main-p .recetas-tips .cambios {
+    padding: 30px 20px;
+  }
+}
+@media screen and (min-width: 570px) {
+  .main-p .recetas-tips .cambios .recetas-sub {
+    font-size: 2.5rem;
+    line-height: 40px;
     padding: 20px;
-    font-size: 2.4rem;
-    letter-spacing: 5px;
-    line-height: 40px;
   }
 }
-.tips-recetas .coccion .coccion-p {
+@media screen and (min-width: 992px) {
+  .main-p .recetas-tips .cambios .recetas-sub {
+    font-size: 3.5rem;
+    line-height: 55px;
+  }
+}
+.main-p .recetas-tips .cambios .parrafo2 {
   line-height: 25px;
-  color: rgb(26, 31, 24);
 }
 @media screen and (min-width: 570px) {
-  .tips-recetas .coccion .coccion-p {
-    font-size: 1.5rem;
+  .main-p .recetas-tips .cambios .parrafo2 {
+    font-size: 1.6rem;
+    line-height: 35px;
+    padding-inline: 15px;
   }
 }
 @media screen and (min-width: 992px) {
-  .tips-recetas .coccion .coccion-p {
-    padding: 20px 80px;
+  .main-p .recetas-tips .cambios .parrafo2 {
     font-size: 2rem;
     letter-spacing: 3px;
-    line-height: 40px;
-  }
-}
-.tips-recetas .cambios {
-  background-color: #B6D456;
-  margin-top: 25px;
-  padding: 25px;
-  margin-bottom: 20px;
-  box-shadow: 2px 5px 18px #E4FF8E;
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .cambios {
-    margin: 20px 200px 30px;
-    padding: 50px;
-  }
-}
-.tips-recetas .cambios .cambios-tit {
-  font-family: "Permanent Marker", cursive;
-  color: #E4FF8E;
-  text-shadow: 1px 0px 1px #37401b;
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .cambios .cambios-tit {
-    font-size: 2.2rem;
-    padding: 0px 100px 10px;
-  }
-}
-.tips-recetas .cambios .cambios-p {
-  line-height: 25px;
-}
-@media screen and (min-width: 992px) {
-  .tips-recetas .cambios .cambios-p {
-    font-size: 2rem;
-    letter-spacing: 3px;
+    padding-inline: 50px;
     line-height: 40px;
   }
 }

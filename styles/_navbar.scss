@@ -1,4 +1,6 @@
 .navbar{
+    display: flex;
+    justify-content: space-between;
     background-color: #44521d;
     font-size: 1.35rem;
     line-height: 20px;
@@ -22,4 +24,27 @@
 .navbar-toggler{
     border: none;
     font-size: 1.5rem;
+}
+
+.navbar-collapse{
+    justify-self: end;
+    .navbar-nav{
+        
+        .nav-item{
+            
+            .nav-link{
+                color: $color-2 !important;
+                font-family: $text-4;
+                font-size: 2rem;
+                transition: all 1s;
+
+                &:hover{
+                    transition: 1s;
+                    transform: scale(1.1);
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid $color-2;
+                }
+            }
+        }
+    }
 }

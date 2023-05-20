@@ -1,303 +1,272 @@
 .main-p{
-    padding: 20px 10px;
 
-    @include computadora {
-        padding: 30px 100px;
+    @include tablet {
+        padding-inline: 25px
     }
 
-    .sec-r{
-    .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
-    @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+    .recetas{
+        padding-inline: 10px;
 
-        article{
-            padding-bottom: 80px;
+        @include computadora {
+            padding:50px 100px;
+        }
 
-            .r-t{
-                @extend %subtitulos;
-                font-size: 2.5rem;
-                text-shadow: 1px 0px 3px $color-1;
-                text-align: center;
-                line-height: 40px;
-                padding:0px 10px 20px;
+        .recetas-text{
+            @include flex (flex, column, center, center);
+            overflow: hidden;
+            text-align: center;
+
+            .recetas-tit{
+                @extend %titulos;
+                text-shadow: .5px 0px .5px $color-4;
+                color: $color-1;
 
                 @include tablet {
-                    font-size: 3.5rem;
-                    padding: 15px;
-                    line-height: 45px;
-                    color: $color-4
+                    font-size: 2rem
                 }
 
                 @include computadora {
-                    padding: 30px;
+                    font-size: 3rem;
+                    letter-spacing: 3px;
                 }
             }
 
-            p{
-                @extend %cursiva;
-                text-align: center;
-                font-size: 1.2rem;
+            .recetas-p{
+                @extend %parrafos;
 
                 @include computadora {
-                    font-size: 1.5rem;
-                    padding: 30px;
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                    padding-inline: 150px;
+                    line-height: 40px
+                }
+            }
+
+            .recetas-card{
+                @include flex (flex, column, center, center);
+                gap: 15px;
+
+                @include tablet {
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-top: 20px;
                 }
 
-            }
-        
-            .card-recetas{
-                display: flex;
-                justify-content: space-evenly;
-                gap: 8px;
-    
+                @include computadora {
+                    gap: 60px;
+                    margin-top: 35px;
+                }
+                
                 .card{
-                    text-align: center;
+                    border: 2px solid $color-1;
                     transition: all 1s;
 
-                    @include computadora {
-                        &:hover{
-                            transition: all 1s;
-                            transform: scale(1.05); 
-                        }
+                    &:hover{
+                        transform:scaleY(1.1);
+                        transition: all 1s;
                     }
 
                     img{
-                        width: 128px;
-                        height: 150px;
-
-                        @include tablet {
-                            width: 200px;
-                            height: 250px
-                        }
+                        height: 300px;
 
                         @include computadora {
-                            width: 350px;
                             height: 450px;
-                            border: 2px solid $color-1;
-                            transition: all 1s;
                         }
                     }
-                }
 
-                    .card-title{
-                        @extend %titulos;
-                        letter-spacing: 1.3px;
-                        font-size: 1.25rem;
+                    a{
+                        div{
+                            h2{
+                                @extend %titulos;
+                                font-size: 1.8rem;
+                                letter-spacing: 4px;
 
-                        @include tablet {
-                            font-size: 2rem;
-                            letter-spacing: 2.5px;
-                        }
+                                @include tablet {
+                                    font-size: 2.1rem
+                                }
 
-                        @include computadora {
-                            font-size: 2.5rem;
-                            letter-spacing: 3.5px;
+                                @include computadora {
+                                    font-size: 3rem;
+                                    letter-spacing: 3px;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+        .text-focus-in{animation:text-focus-in 1.2s cubic-bezier(.55,.085,.68,.53) both}
+            @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
     }
 
-    .tips-recetas{
-        padding-inline: 15px;
+
+    .recetas-tips{
+        @include flex (flex, column, center, center);
+        gap: 10px;
+        padding: 50px 10px 20px;
         text-align: center;
+        @extend %parrafos;
+        color: rgb(18, 29, 8);
 
         @include tablet {
-            padding-inline: 30px;
+            padding: 50px 20px 20px;
         }
 
         @include computadora {
-            padding-inline: 20px;
+            padding: 50px 100px 20px;
         }
 
         .sec-tips-r{
-            padding-block: 10px;
+            @include flex (flex, column, center, center);
+            gap: 15px;
 
-            @include computadora {
-                padding-top: 30px;
-            }
-
-            .h2-tips-r{
+            .recetas-tit{
                 @extend %titulos;
-                color: $color-1;
-                text-shadow: 1px 2px 2px $color-4;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
 
                 @include tablet {
-                    font-size: 2.1rem;
-                    padding-inline: 80px
+                    font-size: 2rem
                 }
 
                 @include computadora {
-                    color: $color-4;
                     font-size: 3rem;
-                    padding-inline: 80px;
+                    letter-spacing: 3px;
                 }
             }
-        }
 
-        .estacion{
-
-            @include computadora {
-                padding: 20px 60px
-            }
-
-            .est-tit{
+            .recetas-sub{
                 @extend %subtitulos;
+                font-size: 1.6rem;
                 background-color: $color-4;
                 padding: 10px;
-                font-size: 1.85rem;
 
                 @include tablet {
                     font-size: 2rem;
+                    padding: 15px;
                 }
 
                 @include computadora {
-                    margin-inline: 100px;
-                    padding: 20px;
-                    font-size: 2.2rem;
-                    letter-spacing: 5px;
-                    line-height: 40px;
+                    font-size: 3rem;
+                    line-height: 50px;
                 }
-    
             }
 
-            .est-p{
-                @extend %parrafos;
-                line-height: 25px;
-
+            .parrafo{
                 @include tablet {
                     font-size: 1.5rem;
+                    line-height: 30px;
                 }
-
                 @include computadora {
-                    padding: 20px 80px;
                     font-size: 2rem;
                     letter-spacing: 3px;
-                    line-height: 40px;
+                    padding-inline: 50px;
+                    line-height: 40px
                 }
             }
+
 
             .frutas-verduras{
                 @include flex (flex, column, center, center);
+                gap: 10px;
+                background-image: url(../img/plantas.jpg);
+                background-size: cover;
+                padding: 15px 10px;
+                border: 2px solid $color-1;
 
-                @include computadora {
+                @include computadora{
                     flex-direction: row;
-                    justify-content: space-around;
-                    align-items: flex-start;
-                    gap: 30px;
-                    margin-top: 30px;
-                    border: 4px solid $color-1;
+                    align-items: start;
                     padding: 30px;
-                    background-color: $color-3;
                 }
+                
 
                 .estaciones{
+                    background-color: $color-2;
+                    border: 2px solid $color-1;
+                    padding: 5px;
 
-                    @include computadora {
-                        width: 300px
+                    @include tablet {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 15px;
+                        padding: 10px;
+                        text-align: start
+                    }
+
+                    @include computadora{
+                        flex-direction: column;
+                        gap: 0px;
+                        width: 400px;
+                        padding: 20px 5px;
+                        text-align: center
                     }
 
                     .estaciones-t{
                         @extend %titulos;
+                        color: $color-4;
+                        text-shadow: none;
 
-                        @include computadora {
-                            font-size: 2rem;
-                            color: $color-1
+                        @include computadora{
+                            font-size: 2.2rem;
                         }
+
                     }
 
                     .estaciones-p{
-                        @extend %parrafos;
-                        line-height: 25px;
-
                         @include computadora {
-                            font-size: 1.8rem;
-                            line-height: 30px;
+                            font-size: 2rem;
+                            letter-spacing: 3px;
+                            padding-inline: 50px;
+                            line-height: 40px
                         }
                     }
-                }
-            }
-        }
-
-        .coccion{
-            padding-top: 10px;
-
-            @include computadora {
-                padding: 20px 60px
-            }
-
-            .coccion-tit{
-                @extend %subtitulos;
-                background-color: $color-4;
-                padding: 10px;
-                font-size: 1.85rem;
-
-                @include tablet {
-                    font-size: 2.2rem;
-                }
-
-                @include computadora {
-                    margin: 30px 100px 10px;
-                    padding: 20px;
-                    font-size: 2.4rem;
-                    letter-spacing: 5px;
-                    line-height: 40px;
-                }
-            }
-
-            .coccion-p{
-                @extend %parrafos;
-                line-height: 25px;
-                color: rgb(26, 31, 24);
-
-                @include tablet {
-                    font-size: 1.5rem;
-                }
-
-                @include computadora {
-                    padding: 20px 80px;
-                    font-size: 2rem;
-                    letter-spacing: 3px;
-                    line-height: 40px;
                 }
             }
         }
 
         .cambios{
-            background-color: $color-1;
-            margin-top: 25px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 2px 5px 18px $color-2;
+            @include flex (flex, column, center, center);
+            margin-top: 30px;
+            background-color: $color-2;
+            padding: 20px 10px;
 
             @include computadora {
-                margin: 20px 200px 30px;
-                padding: 50px;
+                padding: 30px 20px;
             }
 
-            .cambios-tit{
-                font-family: $text-2;
-                color: $color-2;
-                text-shadow: 1px 0px 1px $color-4;
+            .recetas-sub{
+                @extend %subtitulos;
+
+                @include tablet {
+                    font-size: 2.5rem;
+                    line-height: 40px;
+                    padding: 20px;
+                }
 
                 @include computadora {
-                    font-size: 2.2rem;
-                    padding: 0px 100px 10px
+                    font-size: 3.5rem;
+                    line-height: 55px;
                 }
             }
 
-            .cambios-p{
+            .parrafo2{
                 @extend %parrafos;
                 line-height: 25px;
+
+                @include tablet {
+                    font-size: 1.6rem;
+                    line-height: 35px;
+                    padding-inline: 15px;
+                }
 
                 @include computadora {
                     font-size: 2rem;
                     letter-spacing: 3px;
-                    line-height: 40px;
+                    padding-inline: 50px;
+                    line-height: 40px
                 }
             }
         }
     }
-
-
+}
