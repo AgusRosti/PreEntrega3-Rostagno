@@ -28,38 +28,55 @@
         }
 
         .sec-cont1{
-            
-            min-block-size: 360px;
+            @include flex (flex, column, start, center);
+            width: 100%;
+            height: 100vh;
+            margin-top: 10%;
+            background-image: url(../img/2.png);
+            background-position: top;
+            background-size: 300px;
+            background-repeat: no-repeat;
             z-index: 3;
 
+            @include tablet {
+                @include flex (flex, column, center, center);
+                background-position: center;
+                background-size: 400px;
+            }
+
+            @include computadora {
+                background-size: 600px;
+            }
+
             .sec-s1{
+                @extend %titulos;
                 letter-spacing: 1.8px;
-                font-size: 3rem;
+                font-size: 2.1rem;
                 color: $color-2;
-                font-family: $text-titulos;
 
                 @include tablet {
-                    font-size: 4rem;
+                    font-size: 5rem;
                     letter-spacing: 2.5px;
                 }
                 @include computadora {
-                    font-size: 5rem;
+                    font-size: 7rem;
                     letter-spacing: 3.5px;
                 }
             }
 
             .sec-s2{
+                @extend %titulos;
                 letter-spacing: 10px;
-                font-size: 7.5rem;
+                font-size: 4rem;
                 color: $color-2;
 
                 @include tablet {
-                    font-size: 8rem;
+                    font-size: 9rem;
                     letter-spacing: 15px;
                 }
 
                 @include computadora {
-                    font-size: 9.5rem;
+                    font-size: 12rem;
                     letter-spacing: 25px;
                 }
             }

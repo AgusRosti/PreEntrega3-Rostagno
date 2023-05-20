@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Luckiest+Guy&family=Neucha&family=Permanent+Marker&display=swap");
 .formularios h2, .main-p .recetas-tips .sec-tips-r .frutas-verduras .estaciones .estaciones-t, .main-p .recetas-tips .sec-tips-r .recetas-tit, .main-p .recetas .recetas-text .recetas-card .card a div h2, .main-p .recetas .recetas-text .recetas-tit, .main-p .sec2-n .flex-n .n-tit, .main-p .menoscarne h3, .main-p section .sec1-nosotros .t2, .main-p .sec1-send .send-content .send-cuestion, .footer .foot-text .foot-1, .main1 .sec4 .sec4-cont .sec4-texto .sec4-t, .main1 .sec3 .sec-cont3 .cont3-t,
-.main1 .sec3 .sec-cont3 .tit-prod {
+.main1 .sec3 .sec-cont3 .tit-prod, .main1 .sec1 .sec-cont1 .sec-s2, .main1 .sec1 .sec-cont1 .sec-s1 {
   text-align: center;
   padding-bottom: 10px;
   color: #E4FA9D;
@@ -58,12 +58,9 @@
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
   background-color: #44521d;
-  font-size: 1.35rem;
-  line-height: 20px;
-  padding-block: 20px;
+  font-size: 0.8rem;
+  line-height: 25px;
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -82,12 +79,9 @@
 
 .navbar-toggler {
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.6em;
 }
 
-.navbar-collapse {
-  justify-self: end;
-}
 .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #E4FF8E !important;
   font-family: "Amatic SC", cursive;
@@ -130,41 +124,65 @@
   }
 }
 .main1 .sec1 .sec-cont1 {
-  min-block-size: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: 10%;
+  background-image: url(../img/2.png);
+  background-position: top;
+  background-size: 300px;
+  background-repeat: no-repeat;
   z-index: 3;
+}
+@media screen and (min-width: 570px) {
+  .main1 .sec1 .sec-cont1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main1 .sec1 .sec-cont1 {
+    background-size: 600px;
+  }
 }
 .main1 .sec1 .sec-cont1 .sec-s1 {
   letter-spacing: 1.8px;
-  font-size: 3rem;
+  font-size: 2.1rem;
   color: #E4FF8E;
-  font-family: "Luckiest Guy", cursive;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec1 .sec-cont1 .sec-s1 {
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 2.5px;
   }
 }
 @media screen and (min-width: 992px) {
   .main1 .sec1 .sec-cont1 .sec-s1 {
-    font-size: 5rem;
+    font-size: 7rem;
     letter-spacing: 3.5px;
   }
 }
 .main1 .sec1 .sec-cont1 .sec-s2 {
   letter-spacing: 10px;
-  font-size: 7.5rem;
+  font-size: 4rem;
   color: #E4FF8E;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec1 .sec-cont1 .sec-s2 {
-    font-size: 8rem;
+    font-size: 9rem;
     letter-spacing: 15px;
   }
 }
 @media screen and (min-width: 992px) {
   .main1 .sec1 .sec-cont1 .sec-s2 {
-    font-size: 9.5rem;
+    font-size: 12rem;
     letter-spacing: 25px;
   }
 }

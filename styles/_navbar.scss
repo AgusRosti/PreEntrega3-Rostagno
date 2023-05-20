@@ -1,10 +1,7 @@
 .navbar{
-    display: flex;
-    justify-content: space-between;
     background-color: #44521d;
-    font-size: 1.35rem;
-    line-height: 20px;
-    padding-block: 20px;
+    font-size: .8rem;
+    line-height: 25px;
     letter-spacing: 2px;
     font-weight: bold;
 
@@ -23,11 +20,11 @@
 
 .navbar-toggler{
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.6em;
 }
 
 .navbar-collapse{
-    justify-self: end;
+
     .navbar-nav{
         
         .nav-item{
