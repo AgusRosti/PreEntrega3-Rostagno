@@ -70,7 +70,7 @@
     .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
     @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
-    @include computadora {
+    @include tablet {
         display: flex;
         justify-content: center
     }
@@ -82,16 +82,16 @@
         background-color: $color-2;
         margin-top: 20px;
         padding-block: 20px;
+        border: 3px solid rgb(22, 80, 22);
+        border-radius: 20px;
 
-        @include computadora {
+        @include tablet{
             gap: 10px;
             width: 650px;
             background-image: url(../img/fondo3.png);
             background-position: center;
             background-size: cover;
             padding-block: 50px;
-            border: 3px solid rgb(22, 80, 22);
-            border-radius: 20px;
             }
 
         div{
@@ -101,14 +101,14 @@
                 font-size: 1.2rem;
                 text-align: center;
 
-                @include computadora {
+                @include tablet {
                     font-size: 1.8rem
                 }
             }
 
             .fomr-i,
             textarea {
-                width: 100%;
+                width: 200px;
                 padding: 5px;
                 outline: none;
                 font-family: $text-3;
@@ -117,7 +117,8 @@
                 color: gray;
 
                 @include tablet {
-                    width: 300px
+                    width: 300px;
+                    font-size: 1.2rem;
                 }
 
                 @include computadora {

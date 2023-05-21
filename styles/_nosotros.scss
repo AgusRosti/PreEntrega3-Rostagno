@@ -279,6 +279,11 @@
                 border: 1px solid $color-2;
                 padding: 10px;
 
+                @include tablet {
+                    width: 350px;
+                    height: 200px;
+                }
+
                 @include computadora {
                     width: 560px;
                     height: 315px;

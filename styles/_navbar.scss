@@ -1,4 +1,6 @@
 .navbar{
+    display: flex;
+    justify-content: space-between !important;
     background-color: #44521d;
     font-size: .8rem;
     line-height: 25px;
@@ -36,7 +38,7 @@
                 transition: all 1s;
 
                 @include computadora {
-                    
+
                     &:hover{
                         transition: 1s;
                         transform: scale(1.1);

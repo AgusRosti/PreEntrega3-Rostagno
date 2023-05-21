@@ -58,6 +58,8 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between !important;
   background-color: #44521d;
   font-size: 0.8rem;
   line-height: 25px;
@@ -1436,6 +1438,12 @@
   border: 1px solid #E4FF8E;
   padding: 10px;
 }
+@media screen and (min-width: 570px) {
+  .main-p .menoscarne .vid-mc iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
 @media screen and (min-width: 992px) {
   .main-p .menoscarne .vid-mc iframe {
     width: 560px;
@@ -1880,7 +1888,7 @@
     opacity: 1;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 570px) {
   .content-form {
     display: flex;
     justify-content: center;
@@ -1896,8 +1904,10 @@
   background-color: #E4FF8E;
   margin-top: 20px;
   padding-block: 20px;
+  border: 3px solid rgb(22, 80, 22);
+  border-radius: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 570px) {
   .content-form .form-c {
     gap: 10px;
     width: 650px;
@@ -1905,8 +1915,6 @@
     background-position: center;
     background-size: cover;
     padding-block: 50px;
-    border: 3px solid rgb(22, 80, 22);
-    border-radius: 20px;
   }
 }
 .content-form .form-c div p {
@@ -1914,14 +1922,14 @@
   font-size: 1.2rem;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 570px) {
   .content-form .form-c div p {
     font-size: 1.8rem;
   }
 }
 .content-form .form-c div .fomr-i,
 .content-form .form-c div textarea {
-  width: 100%;
+  width: 200px;
   padding: 5px;
   outline: none;
   font-family: "Neucha", cursive;
@@ -1933,6 +1941,7 @@
   .content-form .form-c div .fomr-i,
   .content-form .form-c div textarea {
     width: 300px;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 992px) {
