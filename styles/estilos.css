@@ -88,11 +88,13 @@
   font-size: 2rem;
   transition: all 1s;
 }
-.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  transition: 1s;
-  transform: scale(1.1);
-  padding-bottom: 15px;
-  border-bottom: 2px solid #E4FF8E;
+@media screen and (min-width: 992px) {
+  .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    padding-bottom: 15px;
+    border-bottom: 2px solid #E4FF8E;
+  }
 }
 
 * {
@@ -117,6 +119,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-inline: 10px;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec1 {
@@ -126,24 +129,19 @@
 .main1 .sec1 .sec-cont1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  margin-top: 10%;
+  height: 500px;
   background-image: url(../img/2.png);
-  background-position: top;
+  background-position: center;
   background-size: 300px;
   background-repeat: no-repeat;
   z-index: 3;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec1 .sec-cont1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
+    background-position: top;
     background-size: 400px;
   }
 }
@@ -228,7 +226,7 @@
 }
 .main1 .sec2 {
   height: auto;
-  padding: 10px 5px;
+  padding: 10px;
 }
 @media screen and (min-width: 992px) {
   .main1 .sec2 {
@@ -338,7 +336,7 @@
 }
 .main1 .sec3 {
   height: auto;
-  padding-top: 10px;
+  padding: 15px;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec3 {
@@ -379,8 +377,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  row-gap: 10px;
+  gap: 20px;
+  row-gap: 20px;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec3 .sec-cont3 .cont3-img {
@@ -389,8 +387,8 @@
   }
 }
 .main1 .sec3 .sec-cont3 .cont3-img img {
-  width: 120px;
-  border: 1.5px solid #E4FF8E;
+  width: 150px;
+  border: 2px solid #E4FF8E;
 }
 @media screen and (min-width: 992px) {
   .main1 .sec3 .sec-cont3 .cont3-img img {
@@ -437,8 +435,8 @@
   }
 }
 .main1 .sec3 .prod .sec-productos div img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: 2px solid #E4FA9D;
 }
 @media screen and (min-width: 570px) {
@@ -686,8 +684,8 @@
   .btn-wsp {
     height: 52px;
     width: 51px;
-    bottom: 30px;
-    right: 30px;
+    bottom: 37px;
+    right: 37px;
   }
   .btn-wsp:hover {
     background-color: white;
@@ -1434,7 +1432,7 @@
   }
 }
 .main-p .menoscarne .vid-mc iframe {
-  width: 400px;
+  width: 250px;
   border: 1px solid #E4FF8E;
   padding: 10px;
 }

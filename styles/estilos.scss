@@ -14,7 +14,6 @@
 .main1{
     background-image: url(../img/fondo4.png);
     @include bgimg(center, cover, no-repeat); 
-    
 
     .sec1{
         height: 100vh;
@@ -22,25 +21,24 @@
         background-color: #44521d;
         z-index: 2;
         @include flex (flex, column, center, center);
+        padding-inline: 10px;
 
         @include tablet {
             background-size:auto;
         }
 
         .sec-cont1{
-            @include flex (flex, column, center, center);
+            @include flex (flex, column, top, center);
             width: 100%;
-            height: 100vh;
-            margin-top: 10%;
+            height: 500px;
             background-image: url(../img/2.png);
-            background-position: top;
+            background-position: center;
             background-size: 300px;
             background-repeat: no-repeat;
             z-index: 3;
 
             @include tablet {
-                @include flex (flex, column, center, center);
-                background-position: center;
+                background-position: top;
                 background-size: 400px;
             }
 
@@ -106,7 +104,8 @@
 
     .sec2 {
     height: auto;
-    padding: 10px 5px;
+    padding: 10px;
+
     @include computadora {
         padding: 10px 15px;
     }
@@ -216,7 +215,7 @@
 
     .sec3{
         height: auto;
-        padding-top: 10px;
+        padding: 15px;
 
         @include tablet {
             padding-top: 0px;
@@ -252,8 +251,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px;
-            row-gap: 10px;
+            gap: 20px;
+            row-gap: 20px;
 
             @include tablet {
                 gap: 25px;
@@ -261,8 +260,8 @@
             }
 
                 img{
-                width: 120px;
-                border: 1.5px solid $color-2;
+                width: 150px;
+                border: 2px solid $color-2;
 
 
                 @include computadora {
@@ -312,8 +311,8 @@
                     }
     
                     img{
-                        width: 100px;
-                        height: 100px;
+                        width: 150px;
+                        height: 150px;
                         border: 2px solid $color-3;
     
                         @include tablet {
@@ -590,8 +589,8 @@
     @include computadora {
         height: 52px;
         width: 51px;
-        bottom: 30px;
-        right: 30px;
+        bottom: 37px;
+        right: 37px;
 
         &:hover{
             background-color: white;
