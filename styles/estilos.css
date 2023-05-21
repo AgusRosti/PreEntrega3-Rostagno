@@ -34,7 +34,7 @@
   color: #37401b;
 }
 
-.content-form .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .productos .card-prod .boton-card-prod, .footer .foot-text .foot-flex .foot-bloq .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p {
+.content-form .form-c div input[type=submit], .main-p .sec2-n .n-b, .main-p .menoscarne div .div-ol a, .main-p .productos .card-prod .boton-card-prod, .footer .foot-text .foot-flex .foot-bloq .btn, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b, .main1 .sec4 .sec4-tit .boton, .main1 .sec3 .prod .sec3-p, .main1 .sec3 .sec-cont3 .sec3-p {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Amatic SC", cursive;
@@ -50,7 +50,7 @@
   box-shadow: rgba(128, 252, 117, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.content-form .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .productos .card-prod .boton-card-prod:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .prod .sec3-p:visited {
+.content-form .form-c div input[type=submit]:visited, .main-p .menoscarne div .div-ol a:visited, .main-p .productos .card-prod .boton-card-prod:visited, .main-p .sec1-send .send-content .nav-mapa ul li a:visited, .main1 .sec4 .sec4-cont .sec4-texto .sec4-div .sec4-b:visited, .main1 .sec4 .sec4-tit .boton:visited, .main1 .sec3 .prod .sec3-p:visited, .main1 .sec3 .sec-cont3 .sec3-p:visited {
   color: #37401b;
   background-color: #E4FA9D;
   box-shadow: rgba(27, 235, 8, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -58,8 +58,6 @@
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between !important;
   background-color: #44521d;
   font-size: 0.8rem;
   line-height: 25px;
@@ -149,7 +147,7 @@
 }
 @media screen and (min-width: 992px) {
   .main1 .sec1 .sec-cont1 {
-    background-size: 600px;
+    background-size: 500px;
   }
 }
 .main1 .sec1 .sec-cont1 .sec-s1 {
@@ -338,7 +336,7 @@
 }
 .main1 .sec3 {
   height: auto;
-  padding: 15px;
+  padding: 5px;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec3 {
@@ -379,8 +377,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  row-gap: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec3 .sec-cont3 .cont3-img {
@@ -396,6 +395,27 @@
   .main1 .sec3 .sec-cont3 .cont3-img img {
     width: 200px;
     border: 3px solid #E4FF8E;
+  }
+}
+.main1 .sec3 .sec-cont3 .sec3-p {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 570px) {
+  .main1 .sec3 .sec-cont3 .sec3-p {
+    font-size: 1.6rem;
+    padding: 5px 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main1 .sec3 .sec-cont3 .sec3-p {
+    font-size: 2rem;
+    padding: 5px 35px;
+  }
+  .main1 .sec3 .sec-cont3 .sec3-p:hover {
+    color: #37401b;
+    background-color: #E4FA9D;
+    transition: 1.5seg;
+    box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
 }
 .main1 .sec3 h3 {
@@ -415,8 +435,9 @@
 .main1 .sec3 .prod .sec-productos {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   text-align: center;
-  gap: 10px;
+  gap: 5px;
 }
 @media screen and (min-width: 570px) {
   .main1 .sec3 .prod .sec-productos {
@@ -1899,9 +1920,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/fondo3.png);
+  background-position: center;
+  background-size: cover;
   gap: 5px;
-  border: 2px solid #B6D456;
-  background-color: #E4FF8E;
   margin-top: 20px;
   padding-block: 20px;
   border: 3px solid rgb(22, 80, 22);
@@ -1911,9 +1933,6 @@
   .content-form .form-c {
     gap: 10px;
     width: 650px;
-    background-image: url(../img/fondo3.png);
-    background-position: center;
-    background-size: cover;
     padding-block: 50px;
   }
 }
