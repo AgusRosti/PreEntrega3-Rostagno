@@ -1,13 +1,16 @@
-.navbar{
+.navbar,
+.navbar-expand{
     background-color: #44521d;
     font-size: .8rem;
     line-height: 25px;
     letter-spacing: 2px;
     font-weight: bold;
 
+
     @include computadora {
         font-size: 1.5rem;
-        padding: 15px 30px;
+        padding: 10px 50px;
+        gap: 46%;
     }
 
     img{

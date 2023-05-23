@@ -270,32 +270,6 @@
                 }
                 }
             }
-
-            .sec3-p{
-                @extend %botones;
-                margin-bottom: 20px;
-    
-                &:visited{
-                    @extend %animacion-b;
-                }
-    
-                @include tablet {
-                    font-size: 1.6rem;
-                    padding: 5px 25px;
-                }
-    
-                @include computadora {
-                    font-size: 2rem;
-                    padding: 5px 35px;
-    
-                    &:hover{
-                        color: $color-4;
-                        background-color: $color-3;
-                        transition: 1.5seg;
-                        box-shadow: rgba(230, 245, 228, 0.17) 0px -23px 25px 0px inset, rgba(168, 167, 167, 0.15) 0px -36px 30px 0px inset, rgba(192, 191, 191, 0.1) 0px -79px 40px 0px inset, rgba(248, 247, 247, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-                    }
-                }
-            }
         }
 
         h3{
